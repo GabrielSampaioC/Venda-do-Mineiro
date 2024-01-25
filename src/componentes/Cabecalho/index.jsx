@@ -5,20 +5,21 @@ const CabecalhoEstilizado = styled.header`
     justify-content: space-between;
     background-color: rgb(169, 199, 99);
     padding: 1em;
-    max-width: 1500px;
-    margin: auto;
     align-items: center;
 `;
-const ListaEstilizada = styled.nav`
+const ListaEstilizada = styled.ul`
     display: flex;
-    gap: 20px;
     list-style: none;
 `
 const ItemEstilizado = styled.a`
-    font-size: 16px;
-    color: brown;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
     font-weight: bold;
     text-decoration: none;
+`
+const ListaItem = styled.li`
+    margin: 10px;
 `
 
 export default function Banner(){
@@ -27,18 +28,18 @@ export default function Banner(){
             <img src="./public/imagens/logo.svg" alt="logo-site" width="50px"/>
             <nav>
                 <ListaEstilizada>
-                    <li>
+                    <ListaItem>
                         <ItemEstilizado href="">Início</ItemEstilizado>
-                    </li>
-                    <li>
+                    </ListaItem>
+                    <ListaItem>
                         <ItemEstilizado href="">Sobre</ItemEstilizado>
-                    </li>
-                    <li>
+                    </ListaItem>
+                    <ListaItem>
                         <ItemEstilizado href="">Produtos</ItemEstilizado>
-                    </li>
-                    <li>
+                    </ListaItem>
+                    <ListaItem>
                         <ItemEstilizado href="">Contatos</ItemEstilizado>
-                    </li>
+                    </ListaItem>
                 </ListaEstilizada>
             </nav>
         </CabecalhoEstilizado>

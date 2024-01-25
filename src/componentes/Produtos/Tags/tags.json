@@ -1,0 +1,22 @@
+[
+    {
+            "id": 0,
+            "titulo": "Queijos",
+            "tag":1
+            },
+    {
+            "id": 1,
+            "titulo": "Temperos",
+            "tag":2
+        },
+    {
+            "id": 2,
+            "titulo": "Doces",
+            "tag":3
+        },
+    {
+            "id": 3,
+            "titulo": "Aperitivos",
+            "tag":4
+        }
+]
