@@ -10,6 +10,7 @@ const CabecalhoEstilizado = styled.header`
 const ListaEstilizada = styled.ul`
     display: flex;
     list-style: none;
+    align-items: center;
 `
 const ItemEstilizado = styled.a`
     font-size: 18px;
@@ -17,9 +18,22 @@ const ItemEstilizado = styled.a`
     color: black;
     font-weight: bold;
     text-decoration: none;
-`
+
+`;
 const ListaItem = styled.li`
     margin: 10px;
+`
+
+const BotaoEstilizado = styled.button`
+    background-color: #fff200;
+    border-radius: 15px;
+    padding: 10px;
+    border: transparent;
+
+    & :hover {
+        cursor: pointer;
+    }
+
 `
 
 export default function Banner(){
@@ -38,7 +52,7 @@ export default function Banner(){
                         <ItemEstilizado href="">Produtos</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
-                        <ItemEstilizado href="">Contatos</ItemEstilizado>
+                        <BotaoEstilizado> <ItemEstilizado>Contatos</ItemEstilizado> </BotaoEstilizado>
                     </ListaItem>
                 </ListaEstilizada>
             </nav>

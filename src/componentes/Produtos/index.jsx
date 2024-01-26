@@ -5,7 +5,7 @@ import Tags from "./Tags"
 import Galeria from "../Galeria"
 
 const ContainerProdutos = styled.section`
-    padding: 2em 0;
+    padding: 2em 1em;
     display: flex;
     flex-direction: column;
     gap: 20px;
