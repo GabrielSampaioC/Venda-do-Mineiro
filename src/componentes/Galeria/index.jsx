@@ -1,6 +1,6 @@
-import styled from "styled-components";
-
-import fotos from "../../fotos.json"
+import React from 'react';
+import styled from 'styled-components';
+import Tags from "../Produtos/Tags";
 
 const CardContainer = styled.div`
     background-color: #fff700;
@@ -37,14 +37,15 @@ const CardEstilizado = styled.div`
     box-sizing: border-box;
 `
 
-const Galeria = () => {
+const Galeria = ({ fotos = [], setTag }) => {
 
     return (
         <>
+            <Tags setTag={setTag} />
             <CardEstilizado>
                 {fotos.map(foto =>
                     <CardContainer key={foto.id}>
-                        <img src={foto.path} />
+                        <img src={foto.path} alt={foto.titulo} />
                         <h2>{foto.titulo}</h2>
                     </CardContainer>)}
             </CardEstilizado>

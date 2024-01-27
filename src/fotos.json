@@ -2,46 +2,56 @@
     {
       "titulo": "Doce de Leite",
       "path": "/imagens/galeria/foto-1.jpeg",
-      "id": "1"
+      "id": "1",
+      "tagId": 1
+
     },
     {
       "titulo": "Mel",
       "path": "/imagens/galeria/foto-2.jpeg",
-      "id": "2"
+      "id": "2",
+      "tagId": 1
     },
     {
       "titulo": "Geleia",
       "path": "/imagens/galeria/foto-3.jpeg",
-      "id": "3"
+      "id": 3,
+      "tagId": 1
     },
     {
       "titulo": "Vinagre",
       "path": "/imagens/galeria/foto-4.jpeg",
-      "id": "4"
+      "id": "4",
+      "tagId": 2
     },
     {
       "titulo": "Pimenta",
       "path": "/imagens/galeria/foto-5.jpeg",
-      "id": "5"
+      "id": "5",
+      "tagId": 2
     },
     {
       "titulo": "Castanha",
       "path": "/imagens/galeria/foto-6.jpeg",
-      "id": "6"
+      "id": "6",
+      "tagId": 3
     },
     {
       "titulo": "Pururuca",
       "path": "/imagens/galeria/foto-7.jpeg",
-      "id": "7"
+      "id": "7",
+      "tagId": 3
     },
     {
       "titulo": "Queijo Minas",
       "path": "/imagens/galeria/foto-8.jpeg",
-      "id": "9"
+      "id": "9",
+      "tagId": 4
     },
     {
       "titulo": "Queijo Branco",
       "path": "/imagens/galeria/foto-9.jpeg",
-      "id": "10"
+      "id": "10",
+      "tagId": 4
     }
   ]

@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import Titulos from "../Titulos"
 import Textos from "../Textos"
-import Tags from "./Tags"
-import Galeria from "../Galeria"
 
 const ContainerProdutos = styled.section`
     padding: 2em 1em;
@@ -11,7 +9,7 @@ const ContainerProdutos = styled.section`
     gap: 20px;
 `
 
-export default function Produtos() {
+export default function Produtos({children}) {
     return (
         <ContainerProdutos>
             <Titulos>
@@ -20,8 +18,7 @@ export default function Produtos() {
             <Textos>
                 Venha descobrir a magia além dos nossos derivados de tradição mineira, explore a variedade e o sabor único de todos os nossos produtos.
             </Textos>
-            <Tags />
-            <Galeria/>
+            {children}
         </ContainerProdutos>
     )
 }

@@ -2,7 +2,7 @@
     {
             "id": 0,
             "titulo": "Queijos",
-            "tag":1
+            "tag":4
             },
     {
             "id": 1,
@@ -12,11 +12,11 @@
     {
             "id": 2,
             "titulo": "Doces",
-            "tag":3
+            "tag":1
         },
     {
             "id": 3,
             "titulo": "Aperitivos",
-            "tag":4
+            "tag":3
         }
 ]
