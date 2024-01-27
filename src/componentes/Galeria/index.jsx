@@ -12,7 +12,6 @@ const CardContainer = styled.div`
     border-radius:20px;
     box-sizing: border-box;
     overflow:hidden;
-    box-shadow: #a8a8a8 5px 1px 5px 1px;
 
     & img{
         width:100%;
