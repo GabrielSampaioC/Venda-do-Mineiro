@@ -11,7 +11,7 @@ const ContainerProdutos = styled.section`
 
 export default function Produtos({children}) {
     return (
-        <ContainerProdutos>
+        <ContainerProdutos id="produtos">
             <Titulos>
                 Produtos
             </Titulos>

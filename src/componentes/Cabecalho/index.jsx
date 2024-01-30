@@ -6,6 +6,7 @@ const CabecalhoEstilizado = styled.header`
     background-color: rgb(169, 199, 99);
     padding: 1em;
     align-items: center;
+    z-index: 1;
 `;
 const ListaEstilizada = styled.ul`
     display: flex;
@@ -46,10 +47,10 @@ export default function Banner(){
                         <ItemEstilizado href="">Início</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
-                        <ItemEstilizado href="">Sobre</ItemEstilizado>
+                        <ItemEstilizado href="#entregas">Entregas</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
-                        <ItemEstilizado href="">Produtos</ItemEstilizado>
+                        <ItemEstilizado href="#produtos">Produtos</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
                         <BotaoEstilizado> <ItemEstilizado>Contatos</ItemEstilizado> </BotaoEstilizado>

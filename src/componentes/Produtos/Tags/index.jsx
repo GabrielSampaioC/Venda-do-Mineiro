@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Adicionando importação do useState
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import tags from './tags.json';
 
@@ -12,6 +12,8 @@ const BotaoTags = styled.button`
     cursor: pointer;
     background: ${(props) => (props.$ativo ? '#e0c605' : '#ffffff')};
     color: ${(props)=> (props.$ativo ? '#ffffff' : '#e0c605' )};
+    transform: ${(props)=> (props.$ativo ? "scale(0.98)" : "scale(1.0)")}
+
 `;
 
 const BarraTags = styled.div`
@@ -21,7 +23,7 @@ const BarraTags = styled.div`
 
 const Tags = ({ setTag }) => {
 
-    const [botaoAtivo, setBotaoAtivo] = useState(null);
+    const [botaoAtivo, setBotaoAtivo] = useState(0);
     const AlterarBotaoAtivo = (index) => {
         setBotaoAtivo(index === botaoAtivo ? index : index);
     };

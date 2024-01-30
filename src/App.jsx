@@ -6,6 +6,8 @@ import Produtos from "./componentes/Produtos";
 import { useState, useEffect } from "react";
 import Galeria from "./componentes/Galeria";
 import fotos from "./fotos.json";
+import Entrega from "./componentes/Entrega";
+import Contato from "./componentes/Contato";
 
 const FundoEstilizado = styled.div`
     background-color: rgb(169,199,99);
@@ -50,6 +52,8 @@ function App() {
             <Produtos>
             <Galeria fotos={fotosDaGaleria} setTag={setTag}/>
             </Produtos>
+            <Entrega/>
+            <Contato/>
           </AppContainer>
         </MainContainer>
       </FundoEstilizado>
