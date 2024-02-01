@@ -14,12 +14,11 @@ const CardContainer = styled.div`
     overflow:hidden;
 
     & img{
+        background-color: black;
         width:100%;
-        box-sizing: border-box;
-        height: 350px;
+        height: 300px;
     }
     &:hover img{
-        opacity: 0.7;
         cursor: pointer;
     }
     & h2{
