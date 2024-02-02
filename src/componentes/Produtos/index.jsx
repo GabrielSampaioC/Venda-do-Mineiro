@@ -3,7 +3,7 @@ import Titulos from "../Titulos"
 import Textos from "../Textos"
 
 const ContainerProdutos = styled.section`
-    padding: 2em 1em;
+    padding: 5em 1em;
     display: flex;
     flex-direction: column;
     gap: 20px;

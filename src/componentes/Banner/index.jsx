@@ -4,7 +4,7 @@ import Textos from "../Textos";
 import Botoes from "../Botoes";
 
 const Container = styled.section`
-    min-height: 75vh;
+    height: 80vh;
     align-items:center;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@ const Logo = styled.img`
 `
 const SaberMaisEstilizado = styled.div`
     box-sizing: border-box;
-    max-width: 40vw;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -27,11 +27,11 @@ export default function Conteudo() {
         <Container>
             <SaberMaisEstilizado>
                 <Titulos>
-                    Venda do mineiro
+                    Venda do Mineiro
                 </Titulos>
                 <Textos>
                     Venha saborear e experienciar a exclusividade de nossos produtos, diretamente de Minas
-                    Venha saborear e experienciar a exclusividade de nossos produtos, diretamente de
+                    Venha saborear e experienciar a exclusividade de nossos produtos, diretamente
                     Venha saborear e experienciar a exclusividade de nossos produtos
                 </Textos>
                 <Botoes>

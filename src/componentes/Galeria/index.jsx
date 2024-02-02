@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Tags from "../Produtos/Tags";
 
 const CardContainer = styled.div`
-    background-color: #fff700;
+    background-color: var(--amarelo);
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,9 +14,8 @@ const CardContainer = styled.div`
     overflow:hidden;
 
     & img{
-        background-color: black;
         width:100%;
-        height: 300px;
+        height: 350px;
     }
     &:hover img{
         cursor: pointer;

@@ -1,6 +1,20 @@
 import { createGlobalStyle } from 'styled-components'
 
+
+
 const EstilosGlobais = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+:root{
+  --plano-de-fundo-verde: #A9C763;
+  --marrom: #B46133;
+  --amarelo: #ffea00;
+  --fonte-principal: 'Poppins', sans-serif;
+  --plano-de-fundo-verde-secundario: #B46133;
+  --branco: #ffffff;
+}
+
 html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
@@ -10,6 +24,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: var(--fonte-principal);
 }
 main {
   display: block;

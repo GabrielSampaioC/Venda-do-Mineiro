@@ -7,22 +7,21 @@ import { useState, useEffect } from "react";
 import Galeria from "./componentes/Galeria";
 import fotos from "./fotos.json";
 import Entrega from "./componentes/Entrega";
-import Contato from "./componentes/Contato";
+import Rodape from "./componentes/Rodape";
 
 const FundoEstilizado = styled.div`
     background-color: rgb(169,199,99);
     width:100%;
-    min-height:100vh;
+    min-height:80vh;
 `
 const AppContainer = styled.div`
   max-width: 1440px;
-  max-height: 100vh;
   margin: 0 auto;
 `
-const MainContainer = styled.section`
-    background-color: rgb(255,255,255);
+const MainContainer = styled.main`
+    background-color: var(--branco);
     width:100%;
-    min-height:100vh;
+    font-family: var(--fonte-principal);
 `
 
 function App() {
@@ -42,21 +41,24 @@ function App() {
   return (
     <>
       <EstilosGlobais />
+
       <FundoEstilizado>
+
         <AppContainer>
-          <Cabecalho />
+        <Cabecalho />
           <Banner />
         </AppContainer>
-        <MainContainer>
-          <AppContainer>
-            <Produtos>
-            <Galeria fotos={fotosDaGaleria} setTag={setTag}/>
-            </Produtos>
-            <Entrega/>
-            <Contato/>
-          </AppContainer>
-        </MainContainer>
       </FundoEstilizado>
+      <MainContainer>
+        <AppContainer>
+          <Produtos>
+            <Galeria fotos={fotosDaGaleria} setTag={setTag} />
+          </Produtos>
+          <Entrega />
+        </AppContainer>
+      </MainContainer>
+      <Rodape/>
+
     </>
   )
 }

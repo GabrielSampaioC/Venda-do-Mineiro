@@ -3,15 +3,16 @@ import styled from "styled-components"
 const CabecalhoEstilizado = styled.header`
     display: flex;
     justify-content: space-between;
-    background-color: rgb(169, 199, 99);
-    padding: 1em;
+    background-color: var(--plano-de-fundo-verde);
     align-items: center;
     z-index: 1;
+    padding: 10px 0;
 `;
 const ListaEstilizada = styled.ul`
     display: flex;
     list-style: none;
     align-items: center;
+    margin: 0;
 `
 const ItemEstilizado = styled.a`
     font-size: 18px;
@@ -19,16 +20,17 @@ const ItemEstilizado = styled.a`
     color: black;
     font-weight: bold;
     text-decoration: none;
+    margin: 0;
 
 `;
 const ListaItem = styled.li`
-    margin: 10px;
+    margin: 0 10px;
 `
 
 const BotaoEstilizado = styled.button`
-    background-color: #fff200;
+    background-color: var(--amarelo);
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
     border: transparent;
 
     & :hover {
