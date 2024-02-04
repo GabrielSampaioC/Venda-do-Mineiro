@@ -3,55 +3,64 @@
       "titulo": "Doce de Leite",
       "path": "/imagens/galeria/foto-1.jpeg",
       "id": "1",
-      "tagId": 1
+      "tagId": 1,
+      "link": "doces"
 
     },
     {
       "titulo": "Mel",
       "path": "/imagens/galeria/foto-2.jpeg",
       "id": "2",
-      "tagId": 1
+      "tagId": 1,
+      "link": "doces"
     },
     {
       "titulo": "Geleia",
       "path": "/imagens/galeria/foto-3.jpeg",
       "id": 3,
-      "tagId": 1
+      "tagId": 1,
+      "link": "doces"
     },
     {
       "titulo": "Vinagre",
       "path": "/imagens/galeria/foto-4.jpeg",
       "id": "4",
-      "tagId": 2
+      "tagId": 2,
+      "link": "temperos"
     },
     {
       "titulo": "Pimenta",
       "path": "/imagens/galeria/foto-5.jpeg",
       "id": "5",
-      "tagId": 2
+      "tagId": 2,
+      "link": "temperos"
     },
     {
       "titulo": "Castanha",
       "path": "/imagens/galeria/foto-6.jpeg",
       "id": "6",
-      "tagId": 3
+      "tagId": 3,
+      "link": "aperitivos"
     },
     {
       "titulo": "Pururuca",
       "path": "/imagens/galeria/foto-7.jpeg",
       "id": "7",
-      "tagId": 3
+      "tagId": 3,
+      "link": "aperitivos"
     },
     {
       "titulo": "Queijo Minas",
       "path": "/imagens/galeria/foto-8.jpeg",
       "id": "9",
-      "tagId": 4
+      "tagId": 4,
+      "link": "queijos"
     },
     {
       "titulo": "Queijo Branco",
       "path": "/imagens/galeria/foto-9.jpeg",
       "id": "10",
-      "tagId": 4
+      "tagId": 4,
+      "link": "queijos"
     }
   ]

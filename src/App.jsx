@@ -41,11 +41,9 @@ function App() {
   return (
     <>
       <EstilosGlobais />
-
       <FundoEstilizado>
-
         <AppContainer>
-        <Cabecalho />
+          <Cabecalho />
           <Banner />
         </AppContainer>
       </FundoEstilizado>
@@ -57,7 +55,7 @@ function App() {
           <Entrega />
         </AppContainer>
       </MainContainer>
-      <Rodape/>
+      <Rodape />
 
     </>
   )

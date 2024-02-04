@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Tags from "../Produtos/Tags";
+import { Link } from 'react-router-dom';
 
 const CardContainer = styled.div`
     background-color: var(--amarelo);
@@ -43,8 +44,8 @@ const Galeria = ({ fotos = [], setTag }) => {
             <CardEstilizado>
                 {fotos.map(foto =>
                     <CardContainer key={foto.id}>
-                        <img src={foto.path} alt={foto.titulo} />
-                        <h2>{foto.titulo}</h2>
+                        <Link to={`/cardapio/${foto.link}`}><img src={foto.path} alt={foto.titulo} /> </Link>
+                        <h2>{foto.titulo}</h2>  
                     </CardContainer>)}
             </CardEstilizado>
         </>
