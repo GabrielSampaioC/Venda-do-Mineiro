@@ -1,68 +1,47 @@
-{
-    "subcategoria": [
-        {
-            "banner": "",
-            "titulo": "Queijos Suaves",
-            "itens": [
-                {
-                    "nome": "Minas",
-                    "id": 0,
-                    "tagId": 4
-                },
-                {
-                    "nome": "Requeijão",
-                    "id": 1,
-                    "tagId": 4
-                }
-            ]
-        },
-        {
-            "banner": "",
-            "titulo": "Queijos Frescos",
-            "itens": [
-                {
-                    "nome": "Branco",
-                    "id": 2,
-                    "tagId": 4
-                },
-                {
-                    "nome": "Prato",
-                    "id": 3,
-                    "tagId": 4
-                }
-            ]
-        },
-        {
-            "banner": "",
-            "titulo": "Doces de Pote",
-            "itens": [
-                {
-                    "nome": "Doce de Leite",
-                    "id": 4,
-                    "tagId": 5
-                },
-                {
-                    "nome": "Brigadeiro",
-                    "id": 5,
-                    "tagId": 5
-                }
-            ]
-        },
-        {
-            "banner": "",
-            "titulo": "Doces em Barra",
-            "itens": [
-                {
-                    "nome": "Doce de Leite",
-                    "id": 6,
-                    "tagId": 5
-                },
-                {
-                    "nome": "Brigadeiro",
-                    "id": 7,
-                    "tagId": 5
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "titulo": "Queijos",
+        "id": 1,
+        "itens": [
+            {
+                "categoria": "Queijo Minas",
+                "banner":"url",
+                "subitens": [
+                    {"nome": "Queijo Minas 1"},
+                    {"nome": "Queijo Minas 2"}
+                ]
+            },
+            {
+                "categoria": "Queijo Prato",
+                "banner":"url",
+                "subitens": [
+                    {"nome": "Queijo Prato 1"},
+                    {"nome": "Queijo Prato 2"}
+                ]
+            },
+            {
+                "categoria": "Queijo Branco",
+                "banner":"url",
+                "subitens": [
+                    {"nome": "Queijo Branco 1"},
+                    {"nome": "Queijo Branco 2"}
+                ]
+            }
+        ]
+    },
+    {
+        "titulo": "Doces",
+        "id": 2,
+        "itens": []
+    },
+    {
+        "titulo": "Temperos",
+        "id": 3,
+        "itens": []
+    },
+    {
+        "titulo": "Aperitivos",
+        "id": 4,
+        "itens": []
+    }
+]

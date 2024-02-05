@@ -44,9 +44,13 @@ const Galeria = ({ fotos = [], setTag }) => {
             <CardEstilizado>
                 {fotos.map(foto =>
                     <CardContainer key={foto.id}>
-                        <Link to={`/cardapio/${foto.link}`}><img src={foto.path} alt={foto.titulo} /> </Link>
-                        <h2>{foto.titulo}</h2>  
-                    </CardContainer>)}
+                        <Link to={`/${foto.categoria}`}>
+                            <img src={foto.path} alt={foto.titulo} />
+                            <h2>{foto.titulo}</h2>
+                        </Link>
+
+                    </CardContainer>
+                )}
             </CardEstilizado>
         </>
     )

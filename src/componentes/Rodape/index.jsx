@@ -1,16 +1,22 @@
 import styled from "styled-components"
+import Textos from "../Textos"
 
-export default function Rodape(){
 
 const RodapeEstilizado = styled.footer`
-        background: var(--amarelo);
-        display: flex;
-        justify-content: center;
-    `
+background: var(--amarelo);
+display: flex;
+justify-content: center;
+`
 
-    return(
-        <RodapeEstilizado>
-            all rights reserved
-        </RodapeEstilizado>
+export default function Rodape() {
+
+
+
+    return (
+        <>
+            <RodapeEstilizado>
+                <Textos>all rights reserved</Textos>
+            </RodapeEstilizado>
+        </>
     )
 }
