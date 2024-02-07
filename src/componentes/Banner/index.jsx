@@ -4,7 +4,7 @@ import Textos from "../Textos";
 import Botoes from "../Botoes";
 
 const Container = styled.section`
-    height: 80vh;
+    min-height: 80vh;
     align-items:center;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ const SaberMaisEstilizado = styled.div`
     gap: 20px;
     padding: 1em 0;
 `
-export default function Conteudo() {
+export default function Banner() {
     return (
         <Container>
             <SaberMaisEstilizado>

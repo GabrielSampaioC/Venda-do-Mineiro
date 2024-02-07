@@ -7,6 +7,8 @@ const CabecalhoEstilizado = styled.header`
     align-items: center;
     z-index: 1;
     padding: 10px 0;
+    max-width: 1440px;
+    margin: 0 auto;
 `;
 const ListaEstilizada = styled.ul`
     display: flex;

@@ -2,11 +2,24 @@ import { Link, useParams } from "react-router-dom";
 import videos from "./cardapio.json";
 import Titulos from "../../componentes/Titulos";
 import styled from "styled-components";
+import Textos from "../../componentes/Textos";
 
 const BotaoVoltar = styled.button`
     background: red;
     text-decoration: none;
+    margin: 1em 0;
     
+`
+const ContainerCardapio = styled.section`
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3em 1em;
+`
+const ImagemBanner = styled.img`
+    width: 100%;
+    max-height: 20rem;
+    border-radius: 20px;
+    object-fit: cover;
 `
 
 export default function Cardapio() {
@@ -15,13 +28,14 @@ export default function Cardapio() {
 
     return (
         <>
+        <ContainerCardapio>
+        <BotaoVoltar><Link to={"/"}>Voltar</Link></BotaoVoltar>
             {video ? (
                 <>
-                    <BotaoVoltar><Link to={"/"}>Voltar</Link></BotaoVoltar>
-                    <Titulos>{video.titulo}</Titulos>
                     {video.itens.map((item) => (
                         <div key={item.categoria}>
-                            <img alt={item.banner}></img>
+                            <ImagemBanner src={item.banner}/>
+                            <Titulos>{video.titulo}</Titulos>
                             <h2>{item.categoria}</h2>
                             <ul>
                                 {item.subitens.map((subitem, index) => (
@@ -32,8 +46,9 @@ export default function Cardapio() {
                     ))}
                 </>
             ) : (
-                <p>Vídeo não encontrado</p>
+                <Textos>Vídeo não encontrado</Textos>
             )}
+         </ContainerCardapio>
         </>
     );
 }

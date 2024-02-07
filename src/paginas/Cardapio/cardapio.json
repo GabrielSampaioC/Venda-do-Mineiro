@@ -5,7 +5,7 @@
         "itens": [
             {
                 "categoria": "Queijo Minas",
-                "banner":"url",
+                "banner":"/imagens/galeria/foto-1.jpeg",
                 "subitens": [
                     {"nome": "Queijo Minas 1"},
                     {"nome": "Queijo Minas 2"}
