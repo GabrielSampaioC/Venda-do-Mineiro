@@ -4,19 +4,19 @@
         "id": 1,
         "itens": [
             {
-                "categoria": "Queijo Minas",
+                "categoria": "Queijos Suaves",
                 "banner":"/imagens/galeria/foto-1.jpeg",
                 "subitens": [
-                    {"nome": "Queijo Minas 1"},
-                    {"nome": "Queijo Minas 2"}
+                    {"nome": "Queijo mussarela"},
+                    {"nome": "Queijo prato"}
                 ]
             },
             {
-                "categoria": "Queijo Prato",
+                "categoria": "Queijo Fortes",
                 "banner":"url",
                 "subitens": [
-                    {"nome": "Queijo Prato 1"},
-                    {"nome": "Queijo Prato 2"}
+                    {"nome": "Queijo Gorgonzola"},
+                    {"nome": "Queijo"}
                 ]
             },
             {
@@ -32,7 +32,35 @@
     {
         "titulo": "Doces",
         "id": 2,
-        "itens": []
+        "itens": [
+            {
+                "categoria": "Doces de Pote",
+                "banner":"/imagens/galeria/foto-1.jpeg",
+                "subitens": [
+                    {"nome": "Doce de geleia"},
+                    {"nome": "Doce de leite"},
+                    {"nome": "Doce de Coco"},
+                    {"nome": "Doce de Cocada Cremosa"}
+                ]
+            },
+            {
+                "categoria": "Doces em barra",
+                "banner":"/imagens/galeria/foto-1.jpeg",
+                "subitens": [
+                    {"nome": "Doce de leite"},
+                    {"nome": "Cocada"},
+                    {"nome": "Rapadura"}
+                ]
+            },
+            {
+                "categoria": "Doces Diet",
+                "banner":"url",
+                "subitens": [
+                    {"nome": "Doce de banana"},
+                    {"nome": "Queijo Branco 2"}
+                ]
+            }
+        ]
     },
     {
         "titulo": "Temperos",

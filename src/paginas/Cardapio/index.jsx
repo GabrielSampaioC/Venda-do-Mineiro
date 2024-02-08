@@ -4,6 +4,7 @@ import Titulos from "../../componentes/Titulos";
 import styled from "styled-components";
 import Textos from "../../componentes/Textos";
 
+
 const BotaoVoltar = styled.button`
     background: red;
     text-decoration: none;
@@ -35,8 +36,7 @@ export default function Cardapio() {
                     {video.itens.map((item) => (
                         <div key={item.categoria}>
                             <ImagemBanner src={item.banner}/>
-                            <Titulos>{video.titulo}</Titulos>
-                            <h2>{item.categoria}</h2>
+                            <Titulos>{item.categoria}</Titulos>
                             <ul>
                                 {item.subitens.map((subitem, index) => (
                                     <li key={index}>{subitem.nome}</li>

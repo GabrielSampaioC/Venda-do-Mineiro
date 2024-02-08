@@ -32,7 +32,6 @@ const CardContainer = styled.div`
 const CardEstilizado = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2em 0;
     gap: 30px;
     box-sizing: border-box;
 `
