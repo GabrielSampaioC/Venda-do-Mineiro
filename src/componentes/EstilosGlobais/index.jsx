@@ -8,9 +8,8 @@ const EstilosGlobais = createGlobalStyle`
 :root{
   --plano-de-fundo-verde: #A9C763;
   --marrom: #B46133;
-  --amarelo: #ffea00;
+  --amarelo: #fff241;
   --fonte-principal: 'Poppins', sans-serif;
-  --plano-de-fundo-verde-secundario: #B46133;
   --branco: #ffffff;
 }
 

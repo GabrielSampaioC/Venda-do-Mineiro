@@ -36,6 +36,11 @@ const CardEstilizado = styled.div`
     box-sizing: border-box;
 `
 
+const TextoEstilizado = styled(Link)`
+    text-decoration: none;
+
+`
+
 const Galeria = ({ fotos = [], setTag }) => {
 
     return (
@@ -44,11 +49,10 @@ const Galeria = ({ fotos = [], setTag }) => {
             <CardEstilizado>
                 {fotos.map(foto =>
                     <CardContainer key={foto.id}>
-                        <Link to={`/${foto.categoria}`}>
+                        <TextoEstilizado to={`/${foto.categoria}`}>
                             <img src={foto.path} alt={foto.titulo} />
-                            <h2>{foto.titulo}</h2>
-                        </Link>
-
+                            <h2>{foto.titulo}</h2>  
+                        </TextoEstilizado>
                     </CardContainer>
                 )}
             </CardEstilizado>

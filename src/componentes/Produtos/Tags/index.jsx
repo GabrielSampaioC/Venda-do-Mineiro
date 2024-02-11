@@ -10,9 +10,9 @@ const BotaoTags = styled.button`
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    background: ${(props) => (props.$ativo ? '#e0c605' : '#ffffff')};
-    color: ${(props)=> (props.$ativo ? '#ffffff' : '#e0c605' )};
-    transform: ${(props)=> (props.$ativo ? "scale(0.98)" : "scale(1.0)")}
+    background: ${(props) => (props.$ativo ? "var(--amarelo)" : '#ffffff')};
+    color: ${(props)=> (props.$ativo ? '#ffffff' : "var(--amarelo)" )};
+    transform: ${(props)=> (props.$ativo ? "scale(0.95)" : "scale(1)")}
 
 `;
 

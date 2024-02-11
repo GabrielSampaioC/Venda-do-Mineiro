@@ -13,7 +13,7 @@
             },
             {
                 "categoria": "Queijo Fortes",
-                "banner":"url",
+                "banner":"/imagens/galeria/foto-2.jpeg",
                 "subitens": [
                     {"nome": "Queijo Gorgonzola"},
                     {"nome": "Queijo"}
@@ -35,7 +35,7 @@
         "itens": [
             {
                 "categoria": "Doces de Pote",
-                "banner":"/imagens/galeria/foto-1.jpeg",
+                "banner":"/imagens/galeria/docePoteBanner.jpeg",
                 "subitens": [
                     {"nome": "Doce de geleia"},
                     {"nome": "Doce de leite"},
@@ -45,7 +45,7 @@
             },
             {
                 "categoria": "Doces em barra",
-                "banner":"/imagens/galeria/foto-1.jpeg",
+                "banner":"/imagens/galeria/bannerDoceBarra.jpeg",
                 "subitens": [
                     {"nome": "Doce de leite"},
                     {"nome": "Cocada"},

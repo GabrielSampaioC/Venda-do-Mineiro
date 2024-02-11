@@ -3,7 +3,7 @@ import styled from "styled-components";
 const BotoesEstilizados = styled.button`
     padding: 15px;
     border-radius: 10px;
-    background: yellow;
+    background: var(--amarelo);
     cursor: pointer;
 `;
 

@@ -6,7 +6,7 @@ import Textos from "../../componentes/Textos";
 
 
 const BotaoVoltar = styled.button`
-    background: red;
+    background: var(--marrom);
     text-decoration: none;
     margin: 1em 0;
     
@@ -18,7 +18,7 @@ const ContainerCardapio = styled.section`
 `
 const ImagemBanner = styled.img`
     width: 100%;
-    max-height: 20rem;
+    max-height: 24rem;
     border-radius: 20px;
     object-fit: cover;
 `

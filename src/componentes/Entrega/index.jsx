@@ -15,6 +15,7 @@ margin: 2em 0;
 const ImagemEstilizada = styled.img`
 height:100%;
 background-color: #509afa;
+border-radius: 20px;
 `
 const InfoEntregaEstilizada = styled.div`
 display: flex;
