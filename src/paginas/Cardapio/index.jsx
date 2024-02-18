@@ -3,26 +3,88 @@ import videos from "./cardapio.json";
 import Titulos from "../../componentes/Titulos";
 import styled from "styled-components";
 import Textos from "../../componentes/Textos";
+import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 
-const BotaoVoltar = styled.button`
+const LinkEstilizado = styled(Link)`
     background: var(--marrom);
     text-decoration: none;
     margin: 1em 0;
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
     
 `
 const ContainerCardapio = styled.section`
     max-width: 1440px;
     margin: 0 auto;
     padding: 3em 1em;
+
+`
+const ContainerBanner = styled.div`
+    overflow: hidden;
+    border-radius: 20px;
+
 `
 const ImagemBanner = styled.img`
     width: 100%;
     max-height: 24rem;
+    overflow: hidden;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+`
+const ListaItensEstilizada = styled.ul`
+    display: flex;
+    background-color: var(--amarelo);
+    border-radius: 20px;
+    width: 100%;
+    height: 10rem;
+    justify-content: space-between;
+    padding: 0;
+    cursor: pointer;
+     &:hover{
+        background-color: red;
+        transition: 0.5s;
+    } 
+    
+`
+const ListaDisplay = styled.ul`
+    display: grid;
+    justify-content: space-between;
+    padding: 0;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 20px;
+`
+const ImgItensEstilizada = styled.img`
+    width: 10rem ;
     border-radius: 20px;
     object-fit: cover;
+    opacity: 0.9;
+    margin: 5px;
+    transition: transform 0.3s ease;
+    &:hover {
+    transform: scale(0.98);
+    border: yellow 1px solid;
+    opacity: 1;
+}
 `
+const ListaItemTitulo = styled.h2`
+    text-decoration:none;
+    text-transform:uppercase;
+`
+const DescricaoEstilizada = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 2em;
 
+`
 export default function Cardapio() {
     const parametros = useParams();
     const video = videos.find((video) => video.id === Number(parametros.id));
@@ -30,18 +92,26 @@ export default function Cardapio() {
     return (
         <>
         <ContainerCardapio>
-        <BotaoVoltar><Link to={"/"}>Voltar</Link></BotaoVoltar>
+        <LinkEstilizado to={"/"}><IoArrowBackCircleOutline />Voltar</LinkEstilizado>
             {video ? (
                 <>
                     {video.itens.map((item) => (
                         <div key={item.categoria}>
+                            <ContainerBanner>
                             <ImagemBanner src={item.banner}/>
+                            </ContainerBanner>
                             <Titulos>{item.categoria}</Titulos>
-                            <ul>
+                            <ListaDisplay>
                                 {item.subitens.map((subitem, index) => (
-                                    <li key={index}>{subitem.nome}</li>
+                                    <ListaItensEstilizada>
+                                    <DescricaoEstilizada>
+                                    <ListaItemTitulo key={index}><Textos>{subitem.nome}</Textos></ListaItemTitulo>
+                                    <p>descricao do produto</p>
+                                    </DescricaoEstilizada>
+                                    <ImgItensEstilizada src={item.banner}/>
+                                    </ListaItensEstilizada>
                                 ))}
-                            </ul>
+                            </ListaDisplay>
                         </div>
                     ))}
                 </>

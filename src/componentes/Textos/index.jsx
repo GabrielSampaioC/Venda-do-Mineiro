@@ -6,6 +6,7 @@ const TextoEstilizado = styled.p`
     font-weight: 600;
     text-align: left;
     margin:0;
+    text-decoration: none;
 `
 
 export default function Textos({children}){
