@@ -21,6 +21,7 @@ const SaberMaisEstilizado = styled.div`
     flex-direction: column;
     gap: 20px;
     padding: 1em 0;
+
 `
 export default function Banner() {
     return (

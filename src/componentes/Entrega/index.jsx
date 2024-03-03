@@ -32,17 +32,27 @@ const TextoInformativo = styled.p`
     align-items: center;
     display: flex;
     gap: 10px;
-    justify-content: flex-start;
-    margin: 0;
+    justify-content:space-between;
+    margin: 0 2em;
     svg{
         font-size: 22px;
-        color: #000000;
+        color: #5f2e00;
     }
 `
 const Container = styled.section`
 padding: 5em 1em;
 `
-
+const InfoEstilizada = styled.div`
+    background: #ff650565;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 20vw;
+    color: #5f2e00;
+`
+const InfoPrioritaria = styled.b`
+    margin: 0;
+    padding:0;
+`
 
 export default function Entrega() {
 
@@ -54,8 +64,12 @@ export default function Entrega() {
                     <InfoEntregaEstilizada>
                         <Titulos>Levamos até você</Titulos>
                         <Textos>Descubra a diversidade deliciosa dos nossos produtos, diretamente da terra do queijo, irresistíveis que proporcionam uma experiência gastronômica única.</Textos>
-                        <TextoInformativo>Entregamos na capital e na grande São Paulo <FaLocationDot /> </TextoInformativo>
-                        <TextoInformativo> Horários:  Terça á Sábado: 08:00 às 18:00 <FaClock /> </TextoInformativo>
+                        <InfoEstilizada>
+                        <TextoInformativo>Entregas realizadas na Capital e Grande SP <FaLocationDot /> </TextoInformativo>
+                        </InfoEstilizada>
+                        <InfoEstilizada>
+                        <TextoInformativo><InfoPrioritaria>De Terça á Sábado:</InfoPrioritaria> Das 08h às 18h <FaClock /> </TextoInformativo>
+                        </InfoEstilizada>
                     </InfoEntregaEstilizada>
                     <ContainerImagem>
                         <ImagemEstilizada src="./public/imagens/personagem.svg" />

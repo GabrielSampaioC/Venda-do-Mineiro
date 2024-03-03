@@ -12,7 +12,7 @@ const RodapeEstilizado = styled.footer`
 `
 const ContainerRedes = styled.div`
     display: inline-flex;
-    padding: 1em;
+    padding: 20px;
 `
 const Span = styled.span`
     display: flex;
@@ -39,6 +39,10 @@ const LogoFooter = styled.img`
 `
 const BotaoRedesLink = styled.a`
     text-decoration: none;
+
+    svg{
+        font-size: 22px;
+    }
 `
 export default function Rodape() {
 

@@ -7,15 +7,15 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 
 const LinkEstilizado = styled(Link)`
-    background: var(--marrom);
     text-decoration: none;
     margin: 1em 0;
-    color: var(--branco);
+    color: black;
     font-size: 20px;
     text-align: center;
     padding: 5px;
     display: inline-flex;
     align-items: center;
+    gap: 10px;
     
 `
 const ContainerCardapio = styled.section`
@@ -27,7 +27,6 @@ const ContainerCardapio = styled.section`
 const ContainerBanner = styled.div`
     overflow: hidden;
     border-radius: 20px;
-
 `
 const ImagemBanner = styled.img`
     width: 100%;
@@ -51,7 +50,13 @@ const ListaItensEstilizada = styled.ul`
      &:hover{
         background-color: red;
         transition: 0.5s;
-    } 
+        & img {
+        transform: scale(0.95);
+        border: yellow 1px solid;
+        opacity: 1;
+    }
+    }
+
     
 `
 const ListaDisplay = styled.ul`
@@ -68,11 +73,6 @@ const ImgItensEstilizada = styled.img`
     opacity: 0.9;
     margin: 5px;
     transition: transform 0.3s ease;
-    &:hover {
-    transform: scale(0.98);
-    border: yellow 1px solid;
-    opacity: 1;
-}
 `
 const ListaItemTitulo = styled.h2`
     text-decoration:none;
@@ -103,7 +103,7 @@ export default function Cardapio() {
                             <Titulos>{item.categoria}</Titulos>
                             <ListaDisplay>
                                 {item.subitens.map((subitem, index) => (
-                                    <ListaItensEstilizada>
+                                    <ListaItensEstilizada key={index}>
                                     <DescricaoEstilizada>
                                     <ListaItemTitulo key={index}><Textos>{subitem.nome}</Textos></ListaItemTitulo>
                                     <p>descricao do produto</p>
