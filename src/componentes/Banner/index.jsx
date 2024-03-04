@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Titulos from "../Titulos";
 import Textos from "../Textos";
 import Botoes from "../Botoes";
+import { BiSolidCheese } from "react-icons/bi";
 
 const Container = styled.section`
     min-height: 80vh;
@@ -33,9 +34,9 @@ export default function Banner() {
                 <Textos>
                     Venha saborear e experienciar a exclusividade de nossos produtos, diretamente de Minas
                     Venha saborear e experienciar a exclusividade de nossos produtos, diretamente
-                    Venha saborear e experienciar a exclusividade de nossos produtos
                 </Textos>
                 <Botoes>
+                    <BiSolidCheese />
                     Saiba mais
                 </Botoes>
             </SaberMaisEstilizado>

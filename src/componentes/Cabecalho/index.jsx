@@ -1,27 +1,31 @@
 import styled from "styled-components"
 
 const CabecalhoEstilizado = styled.header`
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--plano-de-fundo-verde);
-    align-items: center;
+    background-color: var(--marrom);
     z-index: 1;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+`;
+const CabecalhoWrapper = styled.div`
     max-width: 1440px;
     margin: 0 auto;
-`;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
 const ListaEstilizada = styled.ul`
     display: flex;
     list-style: none;
     align-items: center;
     margin: 0;
     padding: 0;
+    gap: 15px;
 `
 const ItemEstilizado = styled.a`
     font-size: 18px;
-    font-weight: 600;
-    color: black;
-    font-weight: bold;
+    font-weight: 400;
+    color: var(--amarelo-claro);
     text-decoration: none;
     margin: 0;
 
@@ -31,10 +35,12 @@ const ListaItem = styled.li`
 `
 
 const BotaoEstilizado = styled.button`
-    background-color: var(--amarelo);
-    border-radius: 15px;
-    padding: 15px;
+    background-color: var(--amarelo-claro);
+    border-radius: 40px;
+    padding: 12px 22px;
     border: transparent;
+    color: var(--marrom);
+    font-weight: bold;
 
     & :hover {
         cursor: pointer;
@@ -45,6 +51,7 @@ const BotaoEstilizado = styled.button`
 export default function Banner(){
     return(
         <CabecalhoEstilizado>
+            <CabecalhoWrapper>
             <img src="./public/imagens/logo.svg" alt="logo-site" width="50px"/>
             <nav>
                 <ListaEstilizada>
@@ -58,10 +65,11 @@ export default function Banner(){
                         <ItemEstilizado href="#produtos">Produtos</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
-                        <BotaoEstilizado> <ItemEstilizado>Contatos</ItemEstilizado> </BotaoEstilizado>
+                        <BotaoEstilizado> Contato </BotaoEstilizado>
                     </ListaItem>
                 </ListaEstilizada>
             </nav>
+            </CabecalhoWrapper>
         </CabecalhoEstilizado>
     )
 }

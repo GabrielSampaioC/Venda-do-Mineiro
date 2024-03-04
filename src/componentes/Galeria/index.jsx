@@ -2,9 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Tags from "../Produtos/Tags";
 import { Link } from 'react-router-dom';
+import { GoArrowRight } from "react-icons/go";
 
 const CardContainer = styled.div`
-    background-color: var(--amarelo);
+    position: relative;
+    background-color: var(--marrom);
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,9 +26,11 @@ const CardContainer = styled.div`
     }
     & h2{
         text-align: left;
-        margin-left: 10px;
+        margin-left: 15px;
         font-weight: 600;
-        font-size: 26px;
+        font-size: 2em;
+        text-decoration: none;
+        color: var(--amarelo-claro);
     }
 `
 const CardEstilizado = styled.div`
@@ -38,11 +42,41 @@ const CardEstilizado = styled.div`
 
 const TextoEstilizado = styled(Link)`
     text-decoration: none;
+    position: relative;
+`
+const Overlay = styled.div`
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    gap: 10px;
 
+    ${TextoEstilizado}:hover & {
+        opacity: 1;
+    }
+
+    & a {
+        color: var(--amarelo-claro);
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+`
+
+const Icone = styled(GoArrowRight)`
+    color: var(--branco);
+    font-size: 24px;
 `
 
 const Galeria = ({ fotos = [], setTag }) => {
-
     return (
         <>
             <Tags setTag={setTag} />
@@ -51,8 +85,12 @@ const Galeria = ({ fotos = [], setTag }) => {
                     <CardContainer key={foto.id}>
                         <TextoEstilizado to={`/${foto.categoria}`}>
                             <img src={foto.path} alt={foto.titulo} />
-                            <h2>{foto.titulo}</h2>  
+                            <Overlay>
+                                <a href="#">Visualizar produto</a>
+                                <Icone />
+                            </Overlay>
                         </TextoEstilizado>
+                        <h2>{foto.titulo}</h2>
                     </CardContainer>
                 )}
             </CardEstilizado>

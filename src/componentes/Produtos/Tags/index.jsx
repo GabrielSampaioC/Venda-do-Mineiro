@@ -6,12 +6,12 @@ const BotaoTags = styled.button`
     border-radius: 20px;
     margin: 0 5px;
     padding: 10px 20px;
-    border: 1px solid yellow;
+    border: 2px solid var(--amarelo);
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     background: ${(props) => (props.$ativo ? "var(--amarelo)" : '#ffffff')};
-    color: ${(props)=> (props.$ativo ? '#ffffff' : "var(--amarelo)" )};
+    color: ${(props)=> (props.$ativo ? "var(--marrom)" : "var(--amarelo)" )};
     transform: ${(props)=> (props.$ativo ? "scale(0.95)" : "scale(1)")}
 
 `;

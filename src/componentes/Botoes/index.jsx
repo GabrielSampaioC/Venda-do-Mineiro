@@ -1,10 +1,20 @@
 import styled from "styled-components";
 
 const BotoesEstilizados = styled.button`
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 10px;
-    background: var(--amarelo);
+    background: var(--marrom);
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    border: transparent;
+    color: var(--amarelo-claro);
+    font-weight: bold;
+
+    & svg{
+        color: var(--amarelo);
+    }
 `;
 
 const Link = styled.a`

@@ -1,15 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 
 
-
 const EstilosGlobais = createGlobalStyle`
 
-
 :root{
-  --plano-de-fundo-verde: #A9C763;
-  --marrom: #B46133;
-  --amarelo: #fff241;
-  --fonte-principal: 'Poppins', sans-serif;
+  --amarelo-claro:#F6E6A9;
+  --marrom: #3E3700;
+  --amarelo: #fcd126;
+  --fonte-principal: 'Outfit', 'sans-serif';
   --branco: #ffffff;
 }
 
@@ -22,7 +20,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: var(--fonte-principal);
+  font-family: var(--fonte-principal)
 }
 main {
   display: block;

@@ -49,15 +49,13 @@ const ListaItensEstilizada = styled.ul`
     cursor: pointer;
      &:hover{
         background-color: red;
-        transition: 0.5s;
         & img {
-        transform: scale(0.95);
-        border: yellow 1px solid;
+        transform: scale(0.98);
+        border: var(--amarelo) 2px solid;
         opacity: 1;
+        border-radius: 30px;
     }
     }
-
-    
 `
 const ListaDisplay = styled.ul`
     display: grid;
@@ -72,7 +70,9 @@ const ImgItensEstilizada = styled.img`
     object-fit: cover;
     opacity: 0.9;
     margin: 5px;
-    transition: transform 0.3s ease;
+    border: var(--amarelo) 1px solid;
+    transition: 0.5s ease-out;
+    overflow: hidden;
 `
 const ListaItemTitulo = styled.h2`
     text-decoration:none;

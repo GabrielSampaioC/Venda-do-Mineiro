@@ -9,7 +9,7 @@ import Entrega from "./componentes/Entrega";
 import Sobre from "./componentes/Sobre";
 
 const FundoEstilizado = styled.div`
-    background-color: var(--plano-de-fundo-verde);
+    background-color: var(--amarelo-claro);
     min-height:80vh;
 `
 const AppContainer = styled.div`

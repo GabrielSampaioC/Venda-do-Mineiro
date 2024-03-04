@@ -59,7 +59,6 @@ export default function Entrega() {
     return (
         <>
             <Container>
-                <Titulos>Entregas</Titulos>
                 <ContainerEntrega id="entregas">
                     <InfoEntregaEstilizada>
                         <Titulos>Levamos até você</Titulos>
