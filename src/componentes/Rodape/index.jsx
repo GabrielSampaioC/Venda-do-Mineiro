@@ -5,10 +5,10 @@ import { FaInstagram } from "react-icons/fa";
 
 
 const RodapeEstilizado = styled.footer`
-    background: var(--amarelo);
+    background: var(--marrom);
     align-items: center;
     padding: 1.5em 0;
-    border-radius: 10px 10px;
+    border-radius: 10px 10px 0px 0px;
 `
 const ContainerRedes = styled.div`
     display: inline-flex;
@@ -17,14 +17,18 @@ const ContainerRedes = styled.div`
 const Span = styled.span`
     display: flex;
     justify-content: center;
+    color: var(--amarelo-claro);
+    font-weight: bold;
+    font-size: 1.1rem;
  `
 
 const BlocoEstilizado = styled.div`
-    background-color: var(--marrom);
+    background-color: var(--amarelo);
     border-radius: 5px;
-    padding: 1em;
+    padding: 10px;
     margin: 0 10px;
-    color: white;
+    color: var(--marrom);
+    font-weight: bold;
 `
 
 const Container = styled.div`
@@ -44,6 +48,9 @@ const BotaoRedesLink = styled.a`
         font-size: 22px;
     }
 `
+const DescricaoFooter = styled(Textos)`
+    color: var(--amarelo-claro);
+`
 export default function Rodape() {
 
 
@@ -53,7 +60,7 @@ export default function Rodape() {
             <RodapeEstilizado>
                 <Container >
                 <LogoFooter src="./public/imagens/logo.svg" alt="logo" />
-                <Textos>all rights reserved</Textos>
+                <DescricaoFooter>Venda do mineiro &copy;</DescricaoFooter>
                 <div>
                     <Span>Nossas redes</Span>
                     <ContainerRedes>

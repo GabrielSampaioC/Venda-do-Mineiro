@@ -72,8 +72,9 @@ const Overlay = styled.div`
 `
 
 const Icone = styled(GoArrowRight)`
-    color: var(--branco);
+    color: var(--amarelo-claro);
     font-size: 24px;
+    font-weight: bold;
 `
 
 const Galeria = ({ fotos = [], setTag }) => {

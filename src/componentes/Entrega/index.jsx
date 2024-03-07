@@ -4,7 +4,7 @@ import Textos from "../Textos";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
 const ContainerEntrega = styled.div`
-background-color: var(--amarelo);
+background-color: var(--amarelo-claro);
 border-radius: 20px;
 padding: 2em;
 display: grid;
@@ -14,7 +14,6 @@ margin: 2em 0;
 `
 const ImagemEstilizada = styled.img`
 height:100%;
-background-color: #509afa;
 border-radius: 20px;
 `
 const InfoEntregaEstilizada = styled.div`
@@ -43,8 +42,8 @@ const Container = styled.section`
 padding: 5em 1em;
 `
 const InfoEstilizada = styled.div`
-    background: #ff650565;
-    border-radius: 10px;
+    background: var(--amarelo);
+    border-radius: 20px;
     padding: 15px;
     max-width: 20vw;
     color: #5f2e00;

@@ -4,13 +4,15 @@ import Titulos from "../../componentes/Titulos";
 import styled from "styled-components";
 import Textos from "../../componentes/Textos";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
+import BordaEstilizada from "../../componentes/BarraEstilizada"; 
 
 
 const LinkEstilizado = styled(Link)`
     text-decoration: none;
-    margin: 1em 0;
-    color: black;
-    font-size: 20px;
+    margin: 3em 0 1em 0;
+    color: var(--marrom);
+    font-size: 24px;
+    font-weight: 600;
     text-align: center;
     padding: 5px;
     display: inline-flex;
@@ -40,20 +42,21 @@ const ImagemBanner = styled.img`
 `
 const ListaItensEstilizada = styled.ul`
     display: flex;
-    background-color: var(--amarelo);
-    border-radius: 20px;
+    background-color: var(--amarelo-claro);
+    border-radius: 30px;
     width: 100%;
     height: 10rem;
     justify-content: space-between;
     padding: 0;
     cursor: pointer;
+    transition: transform ease-in-out 0.5s;
      &:hover{
-        background-color: red;
+        background-color:#dfd19a;
         & img {
-        transform: scale(0.98);
         border: var(--amarelo) 2px solid;
         opacity: 1;
-        border-radius: 30px;
+        border-radius: 35px;
+        transform: scale(1.02);
     }
     }
 `
@@ -63,20 +66,24 @@ const ListaDisplay = styled.ul`
     padding: 0;
     grid-template-columns: repeat(2,1fr);
     gap: 10px 20px;
+    margin: 2em 0;
 `
 const ImgItensEstilizada = styled.img`
     width: 10rem ;
     border-radius: 20px;
     object-fit: cover;
-    opacity: 0.9;
+    opacity: 0.8;
     margin: 5px;
-    border: var(--amarelo) 1px solid;
-    transition: 0.5s ease-out;
+    border: transparent 2px solid;
+    transition: 0.4s ease-out;
     overflow: hidden;
 `
 const ListaItemTitulo = styled.h2`
     text-decoration:none;
     text-transform:uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--marrom);
 `
 const DescricaoEstilizada = styled.div`
     display: flex;
@@ -85,6 +92,8 @@ const DescricaoEstilizada = styled.div`
     margin-left: 2em;
 
 `
+
+
 export default function Cardapio() {
     const parametros = useParams();
     const video = videos.find((video) => video.id === Number(parametros.id));
@@ -101,11 +110,12 @@ export default function Cardapio() {
                             <ImagemBanner src={item.banner}/>
                             </ContainerBanner>
                             <Titulos>{item.categoria}</Titulos>
+                            <BordaEstilizada/>
                             <ListaDisplay>
                                 {item.subitens.map((subitem, index) => (
                                     <ListaItensEstilizada key={index}>
                                     <DescricaoEstilizada>
-                                    <ListaItemTitulo key={index}><Textos>{subitem.nome}</Textos></ListaItemTitulo>
+                                    <ListaItemTitulo key={index}>{subitem.nome}</ListaItemTitulo>
                                     <p>descricao do produto</p>
                                     </DescricaoEstilizada>
                                     <ImgItensEstilizada src={item.banner}/>

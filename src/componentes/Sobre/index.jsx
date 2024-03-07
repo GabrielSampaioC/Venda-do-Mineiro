@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Titulos from "../Titulos"
 import Textos from "../Textos"
+import BordaEstilizada from "../BarraEstilizada"
 
 export default function Sobre() {
 
@@ -30,6 +31,7 @@ export default function Sobre() {
                 </ContainerBannerPrincipal>
             </ContainerEstilizado>
             <Titulos>Sobre nós</Titulos>
+            <BordaEstilizada/>
             <Textos>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus omnis nisi, officia iusto at accusamus dignissimos doloremque error temporibus repellat! Possimus odio mollitia consequuntur, corrupti id in quisquam laudantium? Iusto?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptates iusto dolores itaque in praesentium. Ex aut expedita quidem placeat obcaecati, est magni maxime, dolore laudantium accusamus explicabo itaque accusantium?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse harum expedita tenetur corporis aperiam sapiente maiores iste magni ipsa perspiciatis beatae, pariatur impedit veritatis excepturi laudantium? Ipsum nostrum dolore asperiores?

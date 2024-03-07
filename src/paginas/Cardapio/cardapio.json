@@ -34,7 +34,7 @@
         "id": 2,
         "itens": [
             {
-                "categoria": "Doces de Pote",
+                "categoria": "Potes",
                 "banner":"/imagens/galeria/docePoteBanner.jpeg",
                 "subitens": [
                     {"nome": "Doce de geleia"},
@@ -44,7 +44,7 @@
                 ]
             },
             {
-                "categoria": "Doces em barra",
+                "categoria": "Barras",
                 "banner":"/imagens/galeria/bannerDoceBarra.jpeg",
                 "subitens": [
                     {"nome": "Doce de leite"},
@@ -53,7 +53,7 @@
                 ]
             },
             {
-                "categoria": "Doces Diet",
+                "categoria": "Diets",
                 "banner":"url",
                 "subitens": [
                     {"nome": "Doce de banana"},

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Titulos from "../Titulos"
 import Textos from "../Textos"
+import BordaEstilizada from "../BarraEstilizada"
 
 const ContainerProdutos = styled.section`
     padding: 5em 1em;
@@ -12,9 +13,12 @@ const ContainerProdutos = styled.section`
 export default function Produtos({children}) {
     return (
         <ContainerProdutos id="produtos">
+            <div>
             <Titulos>
                 Produtos
             </Titulos>
+            <BordaEstilizada/>
+            </div>
             <Textos>
                 Venha descobrir a magia além dos nossos derivados de tradição mineira, explore a variedade e o sabor único de todos os nossos produtos.
             </Textos>
