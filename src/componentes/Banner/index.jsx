@@ -41,7 +41,7 @@ export default function Banner() {
                 </Botoes>
             </SaberMaisEstilizado>
             <SaberMaisEstilizado>
-                <Logo src="./public/imagens/logo.svg" alt="logo"></Logo>
+                <Logo src="./public/imagens/galeria/logo.svg" alt="logo"></Logo>
             </SaberMaisEstilizado>
         </Container>
     )

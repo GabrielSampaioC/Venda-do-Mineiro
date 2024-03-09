@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import Titulos from "../Titulos";
 import Textos from "../Textos";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaClock } from "react-icons/fa6";
+
 const ContainerEntrega = styled.div`
 background-color: var(--amarelo-claro);
 border-radius: 20px;
@@ -13,7 +12,7 @@ grid-template-columns: 1fr 1fr;
 margin: 2em 0;
 `
 const ImagemEstilizada = styled.img`
-height:100%;
+max-height: 350px;
 border-radius: 20px;
 `
 const InfoEntregaEstilizada = styled.div`
@@ -29,28 +28,28 @@ const ContainerImagem = styled.div`
 const TextoInformativo = styled.p`
     font-size: 14px;
     align-items: center;
-    display: flex;
     gap: 10px;
-    justify-content:space-between;
-    margin: 0 2em;
-    svg{
-        font-size: 22px;
-        color: #5f2e00;
-    }
+    text-align: left;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 10px;
+
 `
 const Container = styled.section`
-padding: 5em 1em;
+    padding: 5em 1em;
 `
 const InfoEstilizada = styled.div`
     background: var(--amarelo);
-    border-radius: 20px;
-    padding: 15px;
-    max-width: 20vw;
-    color: #5f2e00;
+    border-radius: 30px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
 `
 const InfoPrioritaria = styled.b`
     margin: 0;
     padding:0;
+    color: var(--marrom);
+    font-size: 1rem;
 `
 
 export default function Entrega() {
@@ -63,14 +62,13 @@ export default function Entrega() {
                         <Titulos>Levamos até você</Titulos>
                         <Textos>Descubra a diversidade deliciosa dos nossos produtos, diretamente da terra do queijo, irresistíveis que proporcionam uma experiência gastronômica única.</Textos>
                         <InfoEstilizada>
-                        <TextoInformativo>Entregas realizadas na Capital e Grande SP <FaLocationDot /> </TextoInformativo>
+                            <TextoInformativo><InfoPrioritaria>Local de entrega:</InfoPrioritaria> São Paulo, Cajamar, Santana de Parnaíba, Pirapora do bom Jesus e Carapicuíba.</TextoInformativo>
                         </InfoEstilizada>
-                        <InfoEstilizada>
-                        <TextoInformativo><InfoPrioritaria>De Terça á Sábado:</InfoPrioritaria> Das 08h às 18h <FaClock /> </TextoInformativo>
-                        </InfoEstilizada>
+
+                        <TextoInformativo><InfoPrioritaria>Terça a Sábado:</InfoPrioritaria> Das 08h às 18h.</TextoInformativo>
                     </InfoEntregaEstilizada>
                     <ContainerImagem>
-                        <ImagemEstilizada src="./public/imagens/personagem.svg" />
+                        <ImagemEstilizada src="./public/imagens/galeria/mapa.png" />
                     </ContainerImagem>
                 </ContainerEntrega>
             </Container>

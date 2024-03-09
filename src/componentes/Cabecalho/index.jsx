@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom";
 
 const CabecalhoEstilizado = styled.header`
     background-color: var(--marrom);
@@ -52,7 +53,7 @@ export default function Banner(){
     return(
         <CabecalhoEstilizado>
             <CabecalhoWrapper>
-            <img src="./public/imagens/logo.svg" alt="logo-site" width="50px"/>
+            <img src="./public/imagens/galeria/logo.svg" alt="logo-site" width="50px"/>
             <nav>
                 <ListaEstilizada>
                     <ListaItem>

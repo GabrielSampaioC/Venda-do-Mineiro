@@ -4,7 +4,7 @@ import Tags from "../Produtos/Tags";
 import { Link } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
 
-const CardContainer = styled.div`
+const CardContainer = styled(Link)`
     position: relative;
     background-color: var(--marrom);
     display:flex;
@@ -15,6 +15,7 @@ const CardContainer = styled.div`
     border-radius:20px;
     box-sizing: border-box;
     overflow:hidden;
+    text-decoration: none;
 
     & img{
         width:100%;
@@ -59,7 +60,7 @@ const Overlay = styled.div`
     display: flex;
     gap: 10px;
 
-    ${TextoEstilizado}:hover & {
+    ${CardContainer}:hover & {
         opacity: 1;
     }
 
@@ -83,7 +84,7 @@ const Galeria = ({ fotos = [], setTag }) => {
             <Tags setTag={setTag} />
             <CardEstilizado>
                 {fotos.map(foto =>
-                    <CardContainer key={foto.id}>
+                    <CardContainer  to={`/${foto.categoria}`} key={foto.id} >
                         <TextoEstilizado to={`/${foto.categoria}`}>
                             <img src={foto.path} alt={foto.titulo} />
                             <Overlay>

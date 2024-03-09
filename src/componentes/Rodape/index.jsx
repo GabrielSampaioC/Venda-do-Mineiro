@@ -48,8 +48,9 @@ const BotaoRedesLink = styled.a`
         font-size: 22px;
     }
 `
-const DescricaoFooter = styled(Textos)`
+const DescricaoFooter = styled.p`
     color: var(--amarelo-claro);
+    font-size: 1.2rem;
 `
 export default function Rodape() {
 
@@ -59,8 +60,8 @@ export default function Rodape() {
         <>
             <RodapeEstilizado>
                 <Container >
-                <LogoFooter src="./public/imagens/logo.svg" alt="logo" />
-                <DescricaoFooter>Venda do mineiro &copy;</DescricaoFooter>
+                <LogoFooter src="./public/imagens/galeria/logo.svg" alt="logo" />
+                <DescricaoFooter> <b>&copy; Venda do mineiro </b> - Todos os direitos reservados</DescricaoFooter>
                 <div>
                     <Span>Nossas redes</Span>
                     <ContainerRedes>
