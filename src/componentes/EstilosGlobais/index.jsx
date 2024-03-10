@@ -5,7 +5,7 @@ const EstilosGlobais = createGlobalStyle`
 
 :root{
   --amarelo-claro:#F6E6A9;
-  --marrom: #3E3700;
+  --marrom: #3e2800;
   --amarelo: #dea02e;
   --fonte-principal: 'Outfit', 'sans-serif';
   --branco: #ffffff;

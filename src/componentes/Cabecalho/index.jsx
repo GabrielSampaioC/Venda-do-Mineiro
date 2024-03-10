@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Link } from "react-router-dom";
 
 const CabecalhoEstilizado = styled.header`
     background-color: var(--marrom);

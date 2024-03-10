@@ -1,20 +1,20 @@
 [
     {
-      "titulo": "Doce de Leite",
-      "path": "/imagens/galeria/foto-1.jpeg",
+      "titulo": "Doces de Pote",
+      "path": "/imagens/galeria/docePoteBanner.jpeg",
       "id": "1",
       "tagId": 1,
       "categoria": 2
     },
     {
-      "titulo": "Mel",
-      "path": "/imagens/galeria/foto-2.jpeg",
+      "titulo": "Barras",
+      "path": "/imagens/galeria/bannerDoceBarra.jpeg",
       "id": "2",
       "tagId": 1,
       "categoria": 2
     },
     {
-      "titulo": "Geleia",
+      "titulo": "Diets",
       "path": "/imagens/galeria/foto-3.jpeg",
       "id": 3,
       "tagId": 1,
@@ -35,7 +35,7 @@
       "categoria": 3
     },
     {
-      "titulo": "Castanha",
+      "titulo": "Castanhas",
       "path": "/imagens/galeria/foto-6.jpeg",
       "id": "6",
       "tagId": 3,
@@ -49,17 +49,17 @@
       "categoria": 4
     },
     {
-      "titulo": "Queijo Minas",
+      "titulo": "Queijos",
       "path": "/imagens/galeria/foto-8.jpeg",
       "id": "9",
       "tagId": 4,
       "categoria": 1
     },
     {
-      "titulo": "Queijo Branco",
-      "path": "/imagens/galeria/foto-9.jpeg",
-      "id": "10",
-      "tagId": 4,
-      "categoria": 1
+      "titulo": "Embutidos",
+      "path": "/imagens/galeria/foto-10.jpeg",
+      "id": "11",
+      "tagId": 5,
+      "categoria": 5
     }
   ]

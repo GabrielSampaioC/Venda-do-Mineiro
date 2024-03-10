@@ -21,6 +21,7 @@ const CardContainer = styled(Link)`
         width:100%;
         height: 350px;
         object-fit: cover;
+        box-sizing: border-box;
     }
     &:hover img{
         cursor: pointer;
@@ -48,7 +49,7 @@ const TextoEstilizado = styled(Link)`
 const Overlay = styled.div`
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 99%;
+    height: 350px;
     position: absolute;
     top: 0;
     left: 0;

@@ -72,7 +72,7 @@ const ImgItensEstilizada = styled.img`
     width: 10rem ;
     border-radius: 20px;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.95;
     margin: 5px;
     border: transparent 2px solid;
     transition: 0.4s ease-out;
@@ -118,7 +118,7 @@ export default function Cardapio() {
                                     <ListaItemTitulo key={index}>{subitem.nome}</ListaItemTitulo>
                                     <p>descricao do produto</p>
                                     </DescricaoEstilizada>
-                                    <ImgItensEstilizada src={item.banner}/>
+                                    <ImgItensEstilizada src={subitem.foto}/>
                                     </ListaItensEstilizada>
                                 ))}
                             </ListaDisplay>

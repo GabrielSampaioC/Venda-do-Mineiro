@@ -4,27 +4,48 @@
         "id": 1,
         "itens": [
             {
-                "categoria": "Queijos Suaves",
-                "banner":"/imagens/galeria/foto-1.jpeg",
+                "categoria": "Queijos",
+                "banner":"/imagens/galeria/foto-8.jpeg",
                 "subitens": [
-                    {"nome": "Queijo mussarela"},
-                    {"nome": "Queijo prato"}
+                    {"nome": "Mussarela",
+                     "foto":"/imagens/galeria/queijoMussarela.jpeg"}
+                     ,
+                    {"nome": "Queijo coalho",
+                    "foto":"/imagens/galeria/queijoCoalho.jpeg"},
+
+                    {"nome": "Queijo trufado",
+                    "foto":"/imagens/galeria/queijoTrufado.jpeg"},
+
+                    {"nome": "Requeijão",
+                     "foto":"/imagens/galeria/requeijao.jpeg"},
+
+                    {"nome": "Provolone defumado",
+                     "foto":"/imagens/galeria/provoloneDefumado.jpeg" },
+
+                    {"nome": "Provolone desidratado",
+                     "foto":" /imagens/galeria/provoloneDesidratado.jpeg"},
+
+                    {"nome": "Palito temperado",
+                     "foto":" /imagens/galeria/palitoTemperado.jpeg"},
+
+                    {"nome": "Palito",
+                     "foto": "/imagens/galeria/palito.jpeg"},
+
+                    {"nome": "Meia cura",
+                    "foto": "/imagens/galeria/meiaCura.jpeg"},
+
+                    {"nome": "Minas frescal",
+                    "foto":" /imagens/galeria/minasFrescal.jpeg"},
+
+                    {"nome": "Queijo nozinho",
+                    "foto": "/imagens/galeria/queijoNozinho.jpeg"}
                 ]
             },
             {
-                "categoria": "Queijo Fortes",
+                "categoria": "Congelados",
                 "banner":"/imagens/galeria/foto-2.jpeg",
                 "subitens": [
-                    {"nome": "Queijo Gorgonzola"},
-                    {"nome": "Queijo"}
-                ]
-            },
-            {
-                "categoria": "Queijo Branco",
-                "banner":"url",
-                "subitens": [
-                    {"nome": "Queijo Branco 1"},
-                    {"nome": "Queijo Branco 2"}
+                    {"nome": "Pão de queijo","foto": "/imagens/galeria/paoDeQueijo.jpeg"}
                 ]
             }
         ]
@@ -37,26 +58,38 @@
                 "categoria": "Potes",
                 "banner":"/imagens/galeria/docePoteBanner.jpeg",
                 "subitens": [
-                    {"nome": "Doce de geleia"},
-                    {"nome": "Doce de leite"},
-                    {"nome": "Doce de Coco"},
-                    {"nome": "Doce de Cocada Cremosa"}
+                    {"nome": "Doce de geleia","foto":"/imagens/galeria/geleia.jpeg"},
+                    {"nome": "Doce de leite","foto":"/imagens/galeria/doceDeLeitePote.jpeg"},
+                    {"nome": "Doce de Cocada Cremosa","foto":"/imagens/galeria/cocadaPote.jpeg"},
+                    {"nome": "Mel","foto":"/imagens/galeria/mel.jpeg"}
                 ]
             },
             {
                 "categoria": "Barras",
                 "banner":"/imagens/galeria/bannerDoceBarra.jpeg",
                 "subitens": [
-                    {"nome": "Doce de leite"},
-                    {"nome": "Cocada"},
-                    {"nome": "Rapadura"}
+                    {"nome": "Doce de leite",
+                    "foto":"/imagens/galeria/doceLeiteBarra.jpeg"},
+
+                    {"nome": "Cocada",
+                    "foto":"/imagens/galeria/cocada.jpeg"},
+
+                    {"nome": "Rapadura",
+                    "foto":"/imagens/galeria/rapadura.jpeg"},
+
+                    {"nome": "Goiabada Cascão",
+                    "foto":"/imagens/galeria/goiabada.jpeg"},
+
+                    {"nome": "Quebra Queixo",
+                    "foto":"/imagens/galeria/quebraQueixo.jpeg"}
                 ]
             },
             {
                 "categoria": "Diets",
                 "banner":"url",
                 "subitens": [
-                    {"nome": "Doce de banana"},
+                    {"nome": "Doce de banana",
+                    "foto":"/imagens/galeria/doceDeBananaDiet.jpeg"},
                     {"nome": "Queijo Branco 2"}
                 ]
             }
@@ -71,5 +104,29 @@
         "titulo": "Aperitivos",
         "id": 4,
         "itens": []
+    },
+    {
+        "titulo": "Embutidos",
+        "id": 5,
+        "itens": [            {
+            "categoria": "Embutidos",
+            "banner":"/imagens/galeria/foto-10.jpeg",
+            "subitens": [
+                {"nome": "Salaminho",
+                "foto":" /imagens/galeria/salaminho.jpeg"},
+
+                {"nome": "Linguiça caseira",
+                "foto":" /imagens/galeria/linguica.jpeg"},
+
+                {"nome": "Carne Seca",
+                "foto":" /imagens/galeria/carneSeca.jpeg"},
+
+                {"nome": "Peito de Peru",
+                "foto":" /imagens/galeria/peitoDePeru.jpeg"},
+
+                {"nome": "Bacon caipira",
+                "foto":" /imagens/galeria/baconCaipira.jpeg"}
+            ]
+        }]
     }
 ]
