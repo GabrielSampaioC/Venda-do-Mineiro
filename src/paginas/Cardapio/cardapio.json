@@ -42,10 +42,11 @@
                 ]
             },
             {
-                "categoria": "Congelados",
-                "banner":"/imagens/galeria/foto-2.jpeg",
+                "categoria": "Derivados",
+                "banner":"/imagens/galeria/derivadosBanner.jpeg",
                 "subitens": [
-                    {"nome": "Pão de queijo","foto": "/imagens/galeria/paoDeQueijo.jpeg"}
+                    {"nome": "Pão de queijo","foto": "/imagens/galeria/paoDeQueijo.jpeg"},
+                    {"nome": "Requeijão Cremoso","foto": "/imagens/galeria/requeijaoPote.jpeg"}
                 ]
             }
         ]
@@ -86,11 +87,12 @@
             },
             {
                 "categoria": "Diets",
-                "banner":"url",
+                "banner":"/imagens/galeria/docesDietBanner.jpeg",
                 "subitens": [
-                    {"nome": "Doce de banana",
+                    {"nome": "Bananinha Diet",
                     "foto":"/imagens/galeria/doceDeBananaDiet.jpeg"},
-                    {"nome": "Queijo Branco 2"}
+                    {"nome": "Doce de frutas",
+                    "foto":"/imagens/galeria/doceDeFrutas.jpeg"}
                 ]
             }
         ]

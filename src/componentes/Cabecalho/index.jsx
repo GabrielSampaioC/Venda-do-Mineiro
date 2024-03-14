@@ -6,6 +6,7 @@ const CabecalhoEstilizado = styled.header`
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 const CabecalhoWrapper = styled.div`
     max-width: 1440px;

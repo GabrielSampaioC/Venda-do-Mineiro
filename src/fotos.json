@@ -15,7 +15,7 @@
     },
     {
       "titulo": "Diets",
-      "path": "/imagens/galeria/foto-3.jpeg",
+      "path": "/imagens/galeria/docesDietBanner.jpeg",
       "id": 3,
       "tagId": 1,
       "categoria": 2
@@ -28,8 +28,8 @@
       "categoria": 3
     },
     {
-      "titulo": "Pimenta",
-      "path": "/imagens/galeria/foto-5.jpeg",
+      "titulo": "Pimentas",
+      "path": "/imagens/galeria/pimentas.jpeg",
       "id": "5",
       "tagId": 2,
       "categoria": 3
@@ -56,10 +56,31 @@
       "categoria": 1
     },
     {
+      "titulo": "Derivados",
+      "path": "/imagens/galeria/derivadosBanner.jpeg",
+      "id": "11",
+      "tagId": 4,
+      "categoria": 1
+    },
+    {
       "titulo": "Embutidos",
       "path": "/imagens/galeria/foto-10.jpeg",
-      "id": "11",
+      "id": "10",
       "tagId": 5,
       "categoria": 5
+    },
+    {
+      "titulo": "Pingas",
+      "path": "/imagens/galeria/pingas.jpeg",
+      "id": "12",
+      "tagId": 6,
+      "categoria": 6
+    },
+    {
+      "titulo": "Vinhos",
+      "path": "/imagens/galeria/vinhos.jpeg",
+      "id": "13",
+      "tagId": 6,
+      "categoria": 6
     }
   ]

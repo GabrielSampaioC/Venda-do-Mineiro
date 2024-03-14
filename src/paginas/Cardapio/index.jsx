@@ -29,6 +29,7 @@ const ContainerCardapio = styled.section`
 const ContainerBanner = styled.div`
     overflow: hidden;
     border-radius: 20px;
+    margin: 3em 0;
 `
 const ImagemBanner = styled.img`
     width: 100%;
@@ -51,6 +52,7 @@ const ListaItensEstilizada = styled.ul`
     cursor: pointer;
     transition: transform ease-in-out 0.5s;
      &:hover{
+        transition: 0.5s;
         background-color:#dfd19a;
         & img {
         border: var(--amarelo) 2px solid;
@@ -92,6 +94,9 @@ const DescricaoEstilizada = styled.div`
     margin-left: 2em;
 
 `
+const ContainerEstilizado = styled.div`
+    margin: 2em 0;
+`
 
 
 export default function Cardapio() {
@@ -105,7 +110,7 @@ export default function Cardapio() {
             {video ? (
                 <>
                     {video.itens.map((item) => (
-                        <div key={item.categoria}>
+                        <ContainerEstilizado key={item.categoria}>
                             <ContainerBanner>
                             <ImagemBanner src={item.banner}/>
                             </ContainerBanner>
@@ -122,7 +127,7 @@ export default function Cardapio() {
                                     </ListaItensEstilizada>
                                 ))}
                             </ListaDisplay>
-                        </div>
+                        </ContainerEstilizado>
                     ))}
                 </>
             ) : (
