@@ -12,13 +12,19 @@ const BotaoTags = styled.button`
     cursor: pointer;
     background: ${(props) => (props.$ativo ? "var(--amarelo)" : '#ffffff')};
     color: ${(props)=> (props.$ativo ? "var(--marrom)" : "var(--amarelo)" )};
-    transform: ${(props)=> (props.$ativo ? "scale(0.95)" : "scale(1)")}
+    transform: ${(props)=> (props.$ativo ? "scale(0.95)" : "scale(1)")};
+
 
 `;
 
 const BarraTags = styled.div`
     display: flex;
     margin: 1em 0;
+
+    @media (max-width: 768px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;}
 `;
 
 const Tags = ({ setTag }) => {

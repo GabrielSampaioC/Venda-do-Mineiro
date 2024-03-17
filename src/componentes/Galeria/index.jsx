@@ -22,6 +22,11 @@ const CardContainer = styled(Link)`
         height: 350px;
         object-fit: cover;
         box-sizing: border-box;
+
+        @media (max-width:768px) {
+        height: 250px;
+        margin:0;
+    }
     }
     &:hover img{
         cursor: pointer;
@@ -40,6 +45,11 @@ const CardEstilizado = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     box-sizing: border-box;
+
+    @media  (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 const TextoEstilizado = styled(Link)`
@@ -60,6 +70,9 @@ const Overlay = styled.div`
     transition: opacity 0.3s ease-in-out;
     display: flex;
     gap: 10px;
+
+    @media (max-width:768px) {
+        display: none;}
 
     ${CardContainer}:hover & {
         opacity: 1;

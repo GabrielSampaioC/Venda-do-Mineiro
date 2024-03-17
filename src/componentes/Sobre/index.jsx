@@ -7,6 +7,11 @@ export default function Sobre() {
 
     const ContainerEstilizado = styled.section`
         margin: 4em 0;
+
+        
+        @media  (max-width: 768px) {
+            padding: 1rem;
+    }
     `
 
     const ContainerBannerPrincipal = styled.div`
@@ -29,13 +34,14 @@ export default function Sobre() {
                 <ContainerBannerPrincipal>
                     <ImagemBanner src="../imagens/galeria/bannerDoceBarra.jpeg" />
                 </ContainerBannerPrincipal>
-            </ContainerEstilizado>
+
             <Titulos>Sobre nós</Titulos>
             <BordaEstilizada/>
             <Textos>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus omnis nisi, officia iusto at accusamus dignissimos doloremque error temporibus repellat! Possimus odio mollitia consequuntur, corrupti id in quisquam laudantium? Iusto?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptates iusto dolores itaque in praesentium. Ex aut expedita quidem placeat obcaecati, est magni maxime, dolore laudantium accusamus explicabo itaque accusantium?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse harum expedita tenetur corporis aperiam sapiente maiores iste magni ipsa perspiciatis beatae, pariatur impedit veritatis excepturi laudantium? Ipsum nostrum dolore asperiores?
             </Textos>
+            </ContainerEstilizado>
         </>
     )
 }

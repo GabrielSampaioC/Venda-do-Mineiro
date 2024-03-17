@@ -8,6 +8,10 @@ const ContainerProdutos = styled.section`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
+    @media (max-width:768px) {
+        margin:0;
+    }
 `
 
 export default function Produtos({children}) {

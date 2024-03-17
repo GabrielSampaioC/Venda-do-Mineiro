@@ -10,10 +10,19 @@ const Container = styled.section`
     display: flex;
     justify-content: space-between;
     padding: 1em;
+
+    @media (max-width:768px){
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 const Logo = styled.img`
     max-width: 100%;
     width: 350px;
+
+    @media (max-width:768px){
+        display: none;
+    }
 `
 const SaberMaisEstilizado = styled.div`
     box-sizing: border-box;
@@ -22,6 +31,13 @@ const SaberMaisEstilizado = styled.div`
     flex-direction: column;
     gap: 20px;
     padding: 1em 0;
+
+    @media (max-width:768px){
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }   
 
 `
 export default function Banner() {

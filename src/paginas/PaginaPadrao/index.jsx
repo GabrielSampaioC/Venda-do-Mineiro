@@ -5,6 +5,7 @@ import styled from "styled-components";
 import EstilosGlobais from "../../componentes/EstilosGlobais";
 
 const FundoEstilizado = styled.div`
+    
 `
 
 export default function PaginaPadrao() {

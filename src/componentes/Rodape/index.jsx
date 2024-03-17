@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Textos from "../Textos";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
@@ -9,6 +8,7 @@ const RodapeEstilizado = styled.footer`
     align-items: center;
     padding: 1.5em 0;
     border-radius: 10px 10px 0px 0px;
+
 `
 const ContainerRedes = styled.div`
     display: inline-flex;
@@ -37,6 +37,13 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    @media  (max-width: 768px) {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        gap: 2.5rem;
+    }
 `
 const LogoFooter = styled.img`
     width: 100px;

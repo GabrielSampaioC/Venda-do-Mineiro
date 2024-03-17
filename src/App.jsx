@@ -11,10 +11,19 @@ import Sobre from "./componentes/Sobre";
 const FundoEstilizado = styled.div`
     background-color: var(--amarelo-claro);
     min-height:80vh;
+
+    @media (max-width:768px){
+
+}   
+
 `
 const AppContainer = styled.div`
   max-width: 1440px;
   margin: 0 auto;
+
+  @media (max-width:768px){
+    margin: 0;
+}   
 `
 
 

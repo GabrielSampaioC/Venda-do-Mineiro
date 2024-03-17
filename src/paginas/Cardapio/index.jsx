@@ -37,6 +37,9 @@ const ImagemBanner = styled.img`
     overflow: hidden;
     object-fit: cover;
     transition: transform 0.2s ease-in-out;
+    @media  (max-width: 768px) {
+        display: none;
+    }
     &:hover{
         transform: scale(1.1);
     }
@@ -45,12 +48,19 @@ const ListaItensEstilizada = styled.ul`
     display: flex;
     background-color: var(--amarelo-claro);
     border-radius: 30px;
-    width: 100%;
     height: 10rem;
     justify-content: space-between;
     padding: 0;
     cursor: pointer;
     transition: transform ease-in-out 0.5s;
+
+    @media  (max-width: 768px) {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
      &:hover{
         transition: 0.5s;
         background-color:#dfd19a;
@@ -69,6 +79,13 @@ const ListaDisplay = styled.ul`
     grid-template-columns: repeat(2,1fr);
     gap: 10px 20px;
     margin: 2em 0;
+
+    @media  (max-width: 768px) {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        overflow: scroll;
+    }
 `
 const ImgItensEstilizada = styled.img`
     width: 10rem ;
@@ -79,6 +96,13 @@ const ImgItensEstilizada = styled.img`
     border: transparent 2px solid;
     transition: 0.4s ease-out;
     overflow: hidden;
+    @media  (max-width: 768px) {
+        width: calc(100% - 40px);
+        height: 200px;
+        align-self: center;
+        margin-bottom: 10px;
+
+    }
 `
 const ListaItemTitulo = styled.h2`
     text-decoration:none;
@@ -92,6 +116,9 @@ const DescricaoEstilizada = styled.div`
     flex-direction: column;
     align-self: center;
     margin-left: 2em;
+    @media  (max-width: 768px) {
+        margin: 10px;
+    }
 
 `
 const ContainerEstilizado = styled.div`

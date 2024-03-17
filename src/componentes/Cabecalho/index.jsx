@@ -7,6 +7,10 @@ const CabecalhoEstilizado = styled.header`
     position: fixed;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media (max-width:768px){
+        display: flex;
+    }   
 `;
 const CabecalhoWrapper = styled.div`
     max-width: 1440px;
@@ -22,6 +26,10 @@ const ListaEstilizada = styled.ul`
     margin: 0;
     padding: 0;
     gap: 15px;
+
+    @media (max-width:768px){
+        display: none;
+    }   
 `
 const ItemEstilizado = styled.a`
     font-size: 18px;
