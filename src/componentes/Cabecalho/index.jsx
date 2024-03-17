@@ -15,9 +15,7 @@ const CabecalhoWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width:768px){
-        padding: 0 20px;
-    }  
+    padding: 0 20px;
 `
 const ListaEstilizada = styled.nav`
     display: flex;
@@ -67,16 +65,15 @@ const IconeEstilizado = styled(MdMenu)`
     }
 
 `
-
 export default function Banner(){
     return(
         <CabecalhoEstilizado>
             <CabecalhoWrapper>
-            <img src="./public/imagens/galeria/logo.svg" alt="logo-site" width="50px"/>
+            <img src="./public/imagens/galeria/logo.png" alt="logo-site" width="50px"/>
             <IconeEstilizado/>
                 <ListaEstilizada>
                     <ListaItem>
-                        <ItemEstilizado href="">Início</ItemEstilizado>
+                        <ItemEstilizado href="/">Início</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
                         <ItemEstilizado href="#entregas">Entregas</ItemEstilizado>

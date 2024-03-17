@@ -1,13 +1,12 @@
-import { Link, useParams } from "react-router-dom";
-import videos from "./cardapio.json";
+import { useParams } from "react-router-dom";
+import cardapios from "./cardapio.json";
 import Titulos from "../../componentes/Titulos";
 import styled from "styled-components";
 import Textos from "../../componentes/Textos";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import BordaEstilizada from "../../componentes/BarraEstilizada"; 
 
-
-const LinkEstilizado = styled(Link)`
+const LinkEstilizado = styled.a`
     text-decoration: none;
     margin-top: 3em;
     color: var(--marrom);
@@ -18,19 +17,20 @@ const LinkEstilizado = styled(Link)`
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    
-`
+`;
+
 const ContainerCardapio = styled.section`
     max-width: 1440px;
     margin: 0 auto;
     padding: 3em 1em;
+`;
 
-`
 const ContainerBanner = styled.div`
     overflow: hidden;
     border-radius: 20px;
     margin: 3em 0;
-`
+`;
+
 const ImagemBanner = styled.img`
     width: 100%;
     max-height: 24rem;
@@ -43,7 +43,8 @@ const ImagemBanner = styled.img`
     &:hover{
         transform: scale(1.1);
     }
-`
+`;
+
 const ListaItensEstilizada = styled.ul`
     display: flex;
     background-color: var(--amarelo-claro);
@@ -71,7 +72,8 @@ const ListaItensEstilizada = styled.ul`
         transform: scale(1.02);
     }
     }
-`
+`;
+
 const ListaDisplay = styled.ul`
     display: grid;
     justify-content: space-between;
@@ -84,9 +86,9 @@ const ListaDisplay = styled.ul`
         display: flex;
         text-align: center;
         flex-direction: column;
-        overflow: scroll;
     }
-`
+`;
+
 const ImgItensEstilizada = styled.img`
     width: 10rem ;
     border-radius: 20px;
@@ -102,14 +104,16 @@ const ImgItensEstilizada = styled.img`
         align-self: center;
         margin-bottom: 10px;
     }
-`
+`;
+
 const ListaItemTitulo = styled.h2`
     text-decoration:none;
     text-transform:uppercase;
     font-weight: bold;
     font-size: 1.3rem;
     color: var(--marrom);
-`
+`;
+
 const DescricaoEstilizada = styled.div`
     display: flex;
     flex-direction: column;
@@ -118,24 +122,23 @@ const DescricaoEstilizada = styled.div`
     @media  (max-width: 768px) {
         margin: 10px;
     }
+`;
 
-`
 const ContainerEstilizado = styled.div`
     margin: 10px 0;
-`
-
+`;
 
 export default function Cardapio() {
     const parametros = useParams();
-    const video = videos.find((video) => video.id === Number(parametros.id));
+    const cardapio = cardapios.find((cardapio) => cardapio.id === Number(parametros.id));
 
     return (
         <>
         <ContainerCardapio>
-        <LinkEstilizado to={"/"}><IoArrowBackCircleOutline />Voltar</LinkEstilizado>
-            {video ? (
+        <LinkEstilizado href="/#produtos"><IoArrowBackCircleOutline />Voltar</LinkEstilizado>
+            {cardapio ? (
                 <>
-                    {video.itens.map((item) => (
+                    {cardapio.itens.map((item) => (
                         <ContainerEstilizado key={item.categoria}>
                             <ContainerBanner>
                             <ImagemBanner src={item.banner}/>

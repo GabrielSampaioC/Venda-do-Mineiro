@@ -67,7 +67,7 @@ export default function Rodape() {
         <>
             <RodapeEstilizado>
                 <Container >
-                <LogoFooter src="./public/imagens/galeria/logo.svg" alt="logo" />
+                <LogoFooter src="./public/imagens/galeria/logo.png" alt="logo" />
                 <DescricaoFooter> <b>&copy; Venda do mineiro </b> - Todos os direitos reservados</DescricaoFooter>
                 <div>
                     <Span>Nossas redes</Span>

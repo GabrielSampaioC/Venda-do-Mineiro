@@ -26,7 +26,7 @@ const Link = styled.a`
 export default function Botoes({ children }) {
     return (
         <>
-            <Link href="Sobre">
+            <Link href="#Sobre">
                 <BotoesEstilizados>
                     {children}
                 </BotoesEstilizados>

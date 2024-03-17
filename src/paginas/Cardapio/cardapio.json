@@ -100,12 +100,59 @@
     {
         "titulo": "Temperos",
         "id": 3,
-        "itens": []
+        "itens": [            {
+            "categoria": "Pimentas",
+            "banner":"/imagens/galeria/pimentasBanner.jpeg",
+            "subitens": [
+                {"nome": "Pimenta Biquinho",
+                "foto":" /imagens/galeria/pimentaBiquinho.jpeg"},
+
+                {"nome": "Pimenta em conserva no azeite",
+                "foto":" /imagens/galeria/PimentaAzeite.jpeg"},
+
+                {"nome": "Pimenta verde em conserva",
+                "foto":" /imagens/galeria/pimentaVerdeConserva.jpeg"},
+
+                {"nome": "Pimenta com Pequi",
+                "foto":" /imagens/galeria/PimentaComPequi.jpeg"}
+            ]
+        },
+        {
+            "categoria": "Vinagres",
+            "banner":"/imagens/galeria/vinagreBanner.jpeg",
+            "subitens": [
+                {"nome": "Vinagre Orgânico de maçã",
+                "foto":" /imagens/galeria/VinagreMaca.jpeg"}
+            ]
+        }
+    ]
     },
     {
         "titulo": "Aperitivos",
         "id": 4,
-        "itens": []
+        "itens": [            {
+            "categoria": "Frutos Secos",
+            "banner":"/imagens/galeria/foto-6.jpeg",
+            "subitens": [
+                {"nome": "Castanha de Caju",
+                "foto":" /imagens/galeria/CastanhaCaju.jpeg"},
+
+                {"nome": "Castanha do pará",
+                "foto":" /imagens/galeria/castanhaPara.jpeg"},
+
+                {"nome": "Amendoim",
+                "foto":" /imagens/galeria/amendoim.jpeg"}
+            ]
+        },
+        {
+            "categoria": "Crocância Suína",
+            "banner":"/imagens/galeria/CrocanciaSuinaBanner.jpeg",
+            "subitens": [
+                {"nome": "Pururuca",
+                "foto":" /imagens/galeria/foto-7.jpeg"}
+            ]
+        }
+    ]
     },
     {
         "titulo": "Embutidos",
@@ -130,5 +177,26 @@
                 "foto":" /imagens/galeria/baconCaipira.jpeg"}
             ]
         }]
+    },
+    {
+        "titulo": "Bebidas",
+        "id": 6,
+        "itens": [            {
+            "categoria": "Pingas",
+            "banner":"/imagens/galeria/pingaBanner.jpeg",
+            "subitens": [
+                {"nome": "Pinga Artesanal",
+                "foto":" /imagens/galeria/pingas.jpeg"}
+            ]
+        },
+        {
+            "categoria": "Vinhos",
+            "banner":"/imagens/galeria/vinhos.jpeg",
+            "subitens": [
+                {"nome": "Vinho Beloto",
+                "foto":" /imagens/galeria/VinhoBeloto.jpeg"}
+            ]
+        }
+    ]
     }
 ]

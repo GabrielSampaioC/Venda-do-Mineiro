@@ -50,6 +50,12 @@ const CardEstilizado = styled.div`
         display: flex;
         flex-direction: column;
     }
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 `
 
 const TextoEstilizado = styled(Link)`

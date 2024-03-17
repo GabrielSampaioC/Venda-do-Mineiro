@@ -22,9 +22,15 @@ const BarraTags = styled.div`
     margin: 1em 0;
 
     @media (max-width: 768px){
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 5px;}
+    
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px 0;
+    }
 `;
 
 const Tags = ({ setTag }) => {

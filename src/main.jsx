@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<PaginaPadrao/>}>
           <Route path='/' element={<App />}/>
-          <Route path='/:id' element={<Cardapio />}/>
+          <Route path=':id' element={<Cardapio />}/>
         </Route>
       </Routes>
     </BrowserRouter>

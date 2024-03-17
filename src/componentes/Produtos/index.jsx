@@ -4,7 +4,7 @@ import Textos from "../Textos"
 import BordaEstilizada from "../BarraEstilizada"
 
 const ContainerProdutos = styled.section`
-    padding: 5em 1em;
+    padding: 2em 1em;
     display: flex;
     flex-direction: column;
     gap: 20px;

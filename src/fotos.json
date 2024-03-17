@@ -21,8 +21,8 @@
       "categoria": 2
     },
     {
-      "titulo": "Vinagre",
-      "path": "/imagens/galeria/foto-4.jpeg",
+      "titulo": "Vinagres",
+      "path": "/imagens/galeria/vinagreBanner.jpeg",
       "id": "4",
       "tagId": 2,
       "categoria": 3
@@ -35,14 +35,14 @@
       "categoria": 3
     },
     {
-      "titulo": "Castanhas",
+      "titulo": "Frutos Secos",
       "path": "/imagens/galeria/foto-6.jpeg",
       "id": "6",
       "tagId": 3,
       "categoria": 4
     },
     {
-      "titulo": "Pururuca",
+      "titulo": "Crocâncias Suína",
       "path": "/imagens/galeria/foto-7.jpeg",
       "id": "7",
       "tagId": 3,
@@ -71,7 +71,7 @@
     },
     {
       "titulo": "Pingas",
-      "path": "/imagens/galeria/pingas.jpeg",
+      "path": "/imagens/galeria/pingaArtesanal.jpeg",
       "id": "12",
       "tagId": 6,
       "categoria": 6

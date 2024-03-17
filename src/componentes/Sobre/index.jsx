@@ -3,39 +3,41 @@ import Titulos from "../Titulos"
 import Textos from "../Textos"
 import BordaEstilizada from "../BarraEstilizada"
 
+const ContainerEstilizado = styled.section`
+margin: 2em 0;
+padding: 1rem;
+
+@media  (max-width: 768px) {
+    padding: 1rem;
+}
+`
+
+const ContainerBannerPrincipal = styled.div`
+overflow: hidden;
+border-radius: 20px;
+`
+const ImagemBanner = styled.img`
+width: 100%;
+max-height: 24rem;
+overflow: hidden;
+object-fit: cover;
+transition: transform 0.2s ease-in-out;
+@media  (max-width: 768px) {
+    max-height: 7rem;
+    margin: 1em 0;
+    border-radius: 20px;
+}
+&:hover{
+transform: scale(1.1);
+}
+`
+
 export default function Sobre() {
 
-    const ContainerEstilizado = styled.section`
-        margin: 4em 0;
 
-        
-        @media  (max-width: 768px) {
-            padding: 1rem;
-    }
-    `
-
-    const ContainerBannerPrincipal = styled.div`
-    overflow: hidden;
-    border-radius: 20px;
-`
-    const ImagemBanner = styled.img`
-        width: 100%;
-        max-height: 24rem;
-        overflow: hidden;
-        object-fit: cover;
-        transition: transform 0.2s ease-in-out;
-        @media  (max-width: 768px) {
-            max-height: 7rem;
-            margin: 1em 0;
-            border-radius: 20px;
-        }
-    &:hover{
-        transform: scale(1.1);
-    }
-`
     return (
         <>
-            <ContainerEstilizado>
+            <ContainerEstilizado id="Sobre">
                 <ContainerBannerPrincipal>
                     <ImagemBanner src="../imagens/galeria/bannerDoceBarra.jpeg" />
                 </ContainerBannerPrincipal>

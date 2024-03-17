@@ -29,7 +29,7 @@ const SaberMaisEstilizado = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 1em 0;
+    padding: 1em;
 
     @media (max-width:768px){
         width: 100%;
@@ -69,7 +69,7 @@ export default function Banner() {
                 </Botoes>
             </SaberMaisEstilizado>
             <SaberMaisEstilizado>
-                <Logo src="./public/imagens/galeria/logo.svg" alt="logo"></Logo>
+                <Logo src="./public/imagens/galeria/logo.png" alt="logo"></Logo>
             </SaberMaisEstilizado>
         </Container>
     )
