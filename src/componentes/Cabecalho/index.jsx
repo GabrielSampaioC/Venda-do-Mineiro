@@ -69,7 +69,7 @@ export default function Banner(){
     return(
         <CabecalhoEstilizado>
             <CabecalhoWrapper>
-            <img src="./public/imagens/galeria/logo.png" alt="logo-site" width="50px"/>
+            <img src="./imagens/galeria/logo.png" alt="logo-site" width="50px"/>
             <IconeEstilizado/>
                 <ListaEstilizada>
                     <ListaItem>
