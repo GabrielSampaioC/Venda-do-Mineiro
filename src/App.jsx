@@ -30,7 +30,7 @@ const AppContainer = styled.div`
 function App() {
 
   const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos)
-  const [tag, setTag] = useState(0);
+  const [tag, setTag] = useState(4);
 
   useEffect(() => {
     const fotosFiltradas = fotos.filter(foto => {

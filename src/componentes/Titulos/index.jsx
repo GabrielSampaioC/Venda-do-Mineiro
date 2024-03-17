@@ -9,7 +9,7 @@ const TituloEstilizado = styled.h1`
     margin-top: 15px;
 
     @media (max-width:768px){
-        text-align: center;
+        font-size: 3rem;
     }  
 `
 export default function Titulos({children}){

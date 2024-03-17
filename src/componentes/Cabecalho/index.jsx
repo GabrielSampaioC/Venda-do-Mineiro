@@ -1,16 +1,13 @@
 import styled from "styled-components"
+import { MdMenu } from "react-icons/md";
 
 const CabecalhoEstilizado = styled.header`
     background-color: var(--marrom);
     z-index: 1;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    @media (max-width:768px){
-        display: flex;
-    }   
 `;
 const CabecalhoWrapper = styled.div`
     max-width: 1440px;
@@ -18,8 +15,11 @@ const CabecalhoWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:768px){
+        padding: 0 20px;
+    }  
 `
-const ListaEstilizada = styled.ul`
+const ListaEstilizada = styled.nav`
     display: flex;
     list-style: none;
     align-items: center;
@@ -56,13 +56,24 @@ const BotaoEstilizado = styled.button`
     }
 
 `
+const IconeEstilizado = styled(MdMenu)`
+    color: var(--amarelo-claro);
+    font-size: 2em;
+
+    @media  (min-width: 768px) {
+        display: none;
+
+
+    }
+
+`
 
 export default function Banner(){
     return(
         <CabecalhoEstilizado>
             <CabecalhoWrapper>
             <img src="./public/imagens/galeria/logo.svg" alt="logo-site" width="50px"/>
-            <nav>
+            <IconeEstilizado/>
                 <ListaEstilizada>
                     <ListaItem>
                         <ItemEstilizado href="">Início</ItemEstilizado>
@@ -77,7 +88,6 @@ export default function Banner(){
                         <BotaoEstilizado> Contato </BotaoEstilizado>
                     </ListaItem>
                 </ListaEstilizada>
-            </nav>
             </CabecalhoWrapper>
         </CabecalhoEstilizado>
     )

@@ -10,6 +10,9 @@ export default function BordaEstilizada(){
     background-color: var(--marrom);
     border-radius: 20px;
     margin: 10px 0;
+    @media  (max-width: 768px) {
+        width: 20%;
+    }
 `
     return(
         <>

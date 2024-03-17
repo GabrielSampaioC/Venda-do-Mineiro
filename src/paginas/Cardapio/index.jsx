@@ -9,7 +9,7 @@ import BordaEstilizada from "../../componentes/BarraEstilizada";
 
 const LinkEstilizado = styled(Link)`
     text-decoration: none;
-    margin: 3em 0 1em 0;
+    margin-top: 3em;
     color: var(--marrom);
     font-size: 24px;
     font-weight: 600;
@@ -101,7 +101,6 @@ const ImgItensEstilizada = styled.img`
         height: 200px;
         align-self: center;
         margin-bottom: 10px;
-
     }
 `
 const ListaItemTitulo = styled.h2`
@@ -122,7 +121,7 @@ const DescricaoEstilizada = styled.div`
 
 `
 const ContainerEstilizado = styled.div`
-    margin: 2em 0;
+    margin: 10px 0;
 `
 
 

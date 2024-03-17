@@ -50,7 +50,7 @@ const TextoInformativo = styled.p`
 `
 const Container = styled.section`
     padding: 5em 1em;
-    
+
 `
 const InfoEstilizada = styled.div`
     background: var(--amarelo);

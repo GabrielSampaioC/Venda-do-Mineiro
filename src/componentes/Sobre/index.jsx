@@ -24,6 +24,11 @@ export default function Sobre() {
         overflow: hidden;
         object-fit: cover;
         transition: transform 0.2s ease-in-out;
+        @media  (max-width: 768px) {
+            max-height: 7rem;
+            margin: 1em 0;
+            border-radius: 20px;
+        }
     &:hover{
         transform: scale(1.1);
     }

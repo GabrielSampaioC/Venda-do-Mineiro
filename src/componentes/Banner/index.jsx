@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Titulos from "../Titulos";
-import Textos from "../Textos";
 import Botoes from "../Botoes";
 import { BiSolidCheese } from "react-icons/bi";
 
@@ -37,8 +36,21 @@ const SaberMaisEstilizado = styled.div`
         text-align: center;
         align-items: center;
         justify-content: center;
+        gap: 0;
     }   
+`
+const TextoEstilizado = styled.p`
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    text-align: justify;
+    margin: 1em 0;
+    text-decoration: none;
+    line-height: 1.5em;
 
+    @media (max-width:768px){
+        padding: 0 1em;
+    }
 `
 export default function Banner() {
     return (
@@ -47,10 +59,10 @@ export default function Banner() {
                 <Titulos>
                     Venda do Mineiro
                 </Titulos>
-                <Textos>
+                <TextoEstilizado>
                     Venha saborear e experienciar a exclusividade de nossos produtos, diretamente de Minas
                     Venha saborear e experienciar a exclusividade de nossos produtos, diretamente
-                </Textos>
+                </TextoEstilizado>
                 <Botoes>
                     <BiSolidCheese />
                     Saiba mais

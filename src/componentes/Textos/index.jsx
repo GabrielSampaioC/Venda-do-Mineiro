@@ -8,6 +8,10 @@ const TextoEstilizado = styled.p`
     margin:0;
     text-decoration: none;
     line-height: 1.5em;
+
+    @media  (max-width: 768px) {
+        padding: 1em 0;
+    }
 `
 
 export default function Textos({children}){
