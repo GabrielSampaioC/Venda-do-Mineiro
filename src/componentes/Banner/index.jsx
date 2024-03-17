@@ -69,7 +69,7 @@ export default function Banner() {
                 </Botoes>
             </SaberMaisEstilizado>
             <SaberMaisEstilizado>
-                <Logo src="./public/imagens/galeria/logo.png" alt="logo"></Logo>
+                <Logo src="./imagens/galeria/logo.png" alt="logo"></Logo>
             </SaberMaisEstilizado>
         </Container>
     )
