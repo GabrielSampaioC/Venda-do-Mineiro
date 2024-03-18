@@ -29,6 +29,9 @@ const ContainerBanner = styled.div`
     overflow: hidden;
     border-radius: 20px;
     margin: 3em 0;
+    @media  (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const ImagemBanner = styled.img`

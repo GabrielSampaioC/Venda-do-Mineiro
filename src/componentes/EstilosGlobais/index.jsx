@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: var(--fonte-principal)
+  font-family: var(--fonte-principal);
 }
 main {
   display: block;

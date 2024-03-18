@@ -13,6 +13,7 @@ const Container = styled.section`
     @media (max-width:768px){
         flex-direction: column;
         justify-content: center;
+        min-height: 100vh;
     }
 `
 const Logo = styled.img`
@@ -36,7 +37,7 @@ const SaberMaisEstilizado = styled.div`
         text-align: center;
         align-items: center;
         justify-content: center;
-        gap: 0;
+        gap: 10px;
     }   
 `
 const TextoEstilizado = styled.p`
@@ -49,7 +50,7 @@ const TextoEstilizado = styled.p`
     line-height: 1.5em;
 
     @media (max-width:768px){
-        padding: 0 1em;
+        padding: 0 10px;
     }
 `
 export default function Banner() {
