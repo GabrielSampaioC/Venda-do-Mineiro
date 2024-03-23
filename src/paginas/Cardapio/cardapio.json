@@ -155,13 +155,6 @@
                 {"nome": "Pimenta em conserva no azeite",
                 "foto":" /imagens/galeria/PimentaAzeite.jpeg",
                 "descricao": "Pimentas em conserva mergulhadas no azeite, proporcionando um equilíbrio único de calor e suavidade."},
-                {"nome": "Pimenta verde em conserva",
-                "foto":" /imagens/galeria/pimentaVerdeConserva.jpeg",
-                "descricao":"Um toque picante e refrescante! As pimentas verdes em conserva são uma adição vibrante a qualquer refeição. Tem seu sabor característico e intensidade moderada"},
-
-                {"nome": "Pimenta em conserva no azeite",
-                "foto":" /imagens/galeria/PimentaAzeite.jpeg",
-                "descricao": "Pimentas em conserva mergulhadas no azeite, proporcionando um equilíbrio único de calor e suavidade."},
 
                 {"nome": "Pimenta verde em conserva",
                 "foto":" /imagens/galeria/pimentaVerdeConserva.jpeg",
@@ -222,19 +215,10 @@
             "categoria": "Embutidos",
             "banner":"/imagens/galeria/foto-10.jpeg",
             "subitens": [
+                
                 {"nome": "Salaminho",
                 "foto":" /imagens/galeria/salaminho.jpeg",
                 "descricao":"Uma explosão de sabor em cada fatia! Feito com ingredientes selecionados e temperos especiais, nosso salaminho oferece um paladar único e irresistível."},
-
-                {"nome": "Linguiça caseira",
-                "foto":" /imagens/galeria/linguica.jpeg",
-                "descricao": "Tradição e cuidado se encontram em cada pedaço! Nossa linguiça caseira combina carne suculenta e temperos autênticos para um sabor que remete à roça."},
-                {"nome": "Carne Seca",
-                "foto":" /imagens/galeria/carneSeca.jpeg",
-                "descricao":"Sabor autêntico e textura inigualável, nossa carne seca é um ingrediente versátil e delicioso para diversas receitas."},
-                {"nome": "Peito de Peru",
-                "foto":" /imagens/galeria/peitoDePeru.jpeg",
-                "descricao":"Saudável e saboroso! Nosso peito de peru é feito com ingredientes de qualidade, proporcionando um sabor suave e uma textura macia."},
 
                 {"nome": "Linguiça caseira",
                 "foto":" /imagens/galeria/linguica.jpeg",

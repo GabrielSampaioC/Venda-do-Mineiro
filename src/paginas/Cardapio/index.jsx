@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import cardapios from "./cardapio.json";
 import Titulos from "../../componentes/Titulos";
 import styled from "styled-components";
@@ -6,7 +6,7 @@ import Textos from "../../componentes/Textos";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import BordaEstilizada from "../../componentes/BarraEstilizada"; 
 
-const LinkEstilizado = styled.a`
+const LinkEstilizado = styled(Link)`
     text-decoration: none;
     margin-top: 3em;
     color: var(--marrom);
@@ -54,7 +54,7 @@ const ListaItensEstilizada = styled.ul`
     border-radius: 30px;
     height: 10rem;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 0;
     cursor: pointer;
     transition: transform ease-in-out 0.5s;
 
@@ -71,7 +71,7 @@ const ListaItensEstilizada = styled.ul`
         & img {
         border: var(--amarelo) 2px solid;
         opacity: 1;
-        border-radius: 35px;
+        border-radius: 40px;
         transform: scale(1.02);
     }
     }
@@ -102,7 +102,7 @@ const ListaDisplay = styled.ul`
 
 const ImgItensEstilizada = styled.img`
     width: 10rem ;
-    border-radius: 20px;
+    border-radius: 30px;
     object-fit: cover;
     opacity: 0.95;
     margin: 5px;
@@ -151,13 +151,14 @@ const ContainerEstilizado = styled.div`
 `;
 
 export default function Cardapio() {
+
     const parametros = useParams();
     const cardapio = cardapios.find((cardapio) => cardapio.id === Number(parametros.id));
 
     return (
         <>
         <ContainerCardapio>
-        <LinkEstilizado href="/#produtos"><IoArrowBackCircleOutline />Voltar</LinkEstilizado>
+        <LinkEstilizado to="/#produtos"><IoArrowBackCircleOutline />Voltar</LinkEstilizado>
             {cardapio ? (
                 <>
                     {cardapio.itens.map((item) => (

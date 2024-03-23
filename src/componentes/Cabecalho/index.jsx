@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { MdMenu } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const CabecalhoEstilizado = styled.header`
     background-color: var(--marrom);
@@ -29,7 +30,7 @@ const ListaEstilizada = styled.nav`
         display: none;
     }   
 `
-const ItemEstilizado = styled.a`
+const ItemEstilizado = styled(Link)`
     font-size: 18px;
     font-weight: 400;
     color: var(--amarelo-claro);
@@ -41,13 +42,14 @@ const ListaItem = styled.li`
     margin: 0 10px;
 `
 
-const BotaoEstilizado = styled.button`
+const BotaoEstilizado = styled(Link)`
     background-color: var(--amarelo-claro);
     border-radius: 40px;
     padding: 12px 22px;
     border: transparent;
     color: var(--marrom);
     font-weight: bold;
+    text-decoration: none;
 
     & :hover {
         cursor: pointer;
@@ -73,16 +75,16 @@ export default function Banner(){
             <IconeEstilizado/>
                 <ListaEstilizada>
                     <ListaItem>
-                        <ItemEstilizado href="/">Início</ItemEstilizado>
+                        <ItemEstilizado to="/#Inicio">Início</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
-                        <ItemEstilizado href="#entregas">Entregas</ItemEstilizado>
+                        <ItemEstilizado to="/#Sobre">Sobre</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
-                        <ItemEstilizado href="#produtos">Produtos</ItemEstilizado>
+                        <ItemEstilizado to="/#produtos">Produtos</ItemEstilizado>
                     </ListaItem>
                     <ListaItem>
-                        <BotaoEstilizado> Contato </BotaoEstilizado>
+                        <BotaoEstilizado to="#contato"> Contato </BotaoEstilizado>
                     </ListaItem>
                 </ListaEstilizada>
             </CabecalhoWrapper>

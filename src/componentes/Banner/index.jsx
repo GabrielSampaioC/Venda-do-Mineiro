@@ -55,7 +55,7 @@ const TextoEstilizado = styled.p`
 `
 export default function Banner() {
     return (
-        <Container>
+        <Container id="Inicio">
             <SaberMaisEstilizado>
                 <Titulos>
                     Venda do Mineiro
