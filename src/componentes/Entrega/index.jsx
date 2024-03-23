@@ -83,7 +83,7 @@ export default function Entrega() {
                         <TextoInformativo><InfoPrioritaria>Terça a Sábado:</InfoPrioritaria> Das 08h às 18h.</TextoInformativo>
                     </InfoEntregaEstilizada>
                     <ContainerImagem>
-                        <ImagemEstilizada src="./public/imagens/galeria/mapa.png" />
+                        <ImagemEstilizada src="./imagens/galeria/mapa.png"/>
                     </ContainerImagem>
                 </ContainerEntrega>
             </Container>

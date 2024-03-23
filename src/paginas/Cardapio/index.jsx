@@ -54,7 +54,7 @@ const ListaItensEstilizada = styled.ul`
     border-radius: 30px;
     height: 10rem;
     justify-content: space-between;
-    padding: 0;
+    padding: 10px 0;
     cursor: pointer;
     transition: transform ease-in-out 0.5s;
 
@@ -90,6 +90,14 @@ const ListaDisplay = styled.ul`
         text-align: center;
         flex-direction: column;
     }
+    @media  (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media  (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 `;
 
 const ImgItensEstilizada = styled.img`
@@ -109,6 +117,14 @@ const ImgItensEstilizada = styled.img`
     }
 `;
 
+const TextoEstilizado = styled.p`
+    color: var(--marrom);
+    padding: 10px 0;
+    margin: 0;
+    text-align: justify;
+    font-size: 12px;
+
+`
 const ListaItemTitulo = styled.h2`
     text-decoration:none;
     text-transform:uppercase;
@@ -122,6 +138,9 @@ const DescricaoEstilizada = styled.div`
     flex-direction: column;
     align-self: center;
     margin-left: 2em;
+    width: 65%;
+    float: left;
+    flex-wrap: wrap;
     @media  (max-width: 768px) {
         margin: 10px;
     }
@@ -153,7 +172,7 @@ export default function Cardapio() {
                                     <ListaItensEstilizada key={index}>
                                     <DescricaoEstilizada>
                                     <ListaItemTitulo key={index}>{subitem.nome}</ListaItemTitulo>
-                                    <p>{subitem.descricao}</p>
+                                    <TextoEstilizado>{subitem.descricao}</TextoEstilizado>
                                     </DescricaoEstilizada>
                                     <ImgItensEstilizada src={subitem.foto}/>
                                     </ListaItensEstilizada>
