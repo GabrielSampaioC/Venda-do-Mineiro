@@ -8,45 +8,58 @@
                 "banner":"/imagens/galeria/foto-8.jpeg",
                 "subitens": [
                     {"nome": "Mussarela",
-                     "foto":"/imagens/galeria/queijoMussarela.jpeg"}
+                     "foto":"/imagens/galeria/queijoMussarela.jpeg",
+                    "descricao": "Queijo macio e elástico, originário da Itália. Ideal para pizzas, sanduíches e saladas."}
                      ,
                     {"nome": "Queijo coalho",
-                    "foto":"/imagens/galeria/queijoCoalho.jpeg"},
+                    "foto":"/imagens/galeria/queijoCoalho.jpeg",
+                    "descricao": "Queijo firme e levemente salgado, tradicional do nordeste brasileiro. Ideal para grelhados e petiscos."},
 
                     {"nome": "Queijo trufado",
-                    "foto":"/imagens/galeria/queijoTrufado.jpeg"},
+                    "foto":"/imagens/galeria/queijoTrufado.jpeg",
+                    "descricao": "Queijo com aroma e sabor intensificados pela presença de trufas. Delicioso em tábuas de queijos ou como ingrediente gourmet em pratos."},
 
                     {"nome": "Requeijão",
-                     "foto":"/imagens/galeria/requeijao.jpeg"},
+                     "foto":"/imagens/galeria/requeijao.jpeg",
+                    "descricao": "Queijo cremoso e suave, perfeito para passar no pão, rechear bolos e incrementar receitas."},
 
                     {"nome": "Provolone defumado",
-                     "foto":"/imagens/galeria/provoloneDefumado.jpeg" },
+                     "foto":"/imagens/galeria/provoloneDefumado.jpeg",
+                    "descricao":"Provolone defumado com sabor intenso e aroma marcante. Ótimo para petiscos ou derretido em pratos quentes."},
 
                     {"nome": "Provolone desidratado",
-                     "foto":" /imagens/galeria/provoloneDesidratado.jpeg"},
+                     "foto":" /imagens/galeria/provoloneDesidratado.jpeg",
+                    "descricao": "Provolone desidratado, com textura mais concentrada e sabor acentuado. Perfeito para acompanhar vinhos ou como aperitivo."},
 
                     {"nome": "Palito temperado",
-                     "foto":" /imagens/galeria/palitoTemperado.jpeg"},
+                     "foto":" /imagens/galeria/palitoTemperado.jpeg",
+                    "descricao": "Palito de queijo temperado com especiarias, oferecendo um sabor único e uma opção crocante para petiscos."},
 
                     {"nome": "Palito",
-                     "foto": "/imagens/galeria/palito.jpeg"},
+                     "foto": "/imagens/galeria/palito.jpeg",
+                    "descricao": "Palito de queijo tradicional, ideal para servir como petisco ou acompanhar uma variedade de pratos."},
 
                     {"nome": "Meia cura",
-                    "foto": "/imagens/galeria/meiaCura.jpeg"},
+                    "foto": "/imagens/galeria/meiaCura.jpeg",
+                    "descricao": "Queijo com maturação intermediária, oferecendo um equilíbrio entre sabores suaves e mais intensos. Ótimo para degustação ou como ingrediente em receitas."},
 
                     {"nome": "Minas frescal",
-                    "foto":" /imagens/galeria/minasFrescal.jpeg"},
-
+                    "foto":" /imagens/galeria/minasFrescal.jpeg",
+                    "descricao": "Variedade fresca do queijo Minas, com sabor suave e textura delicada. Perfeito para sanduíches e preparações que não requerem cozimento."},
+                    
                     {"nome": "Queijo nozinho",
-                    "foto": "/imagens/galeria/queijoNozinho.jpeg"}
+                    "foto": "/imagens/galeria/queijoNozinho.jpeg",
+                    "descricao": "Queijo mineiro em formato pequeno e arredondado, com sabor suave. Ótimo para petiscos ou como parte de tábuas de queijos."}
                 ]
             },
             {
                 "categoria": "Derivados",
                 "banner":"/imagens/galeria/derivadosBanner.jpeg",
                 "subitens": [
-                    {"nome": "Pão de queijo","foto": "/imagens/galeria/paoDeQueijo.jpeg"},
-                    {"nome": "Requeijão Cremoso","foto": "/imagens/galeria/requeijaoPote.jpeg"}
+                    {"nome": "Pão de queijo","foto": "/imagens/galeria/paoDeQueijo.jpeg",
+                    "descricao": "A estrela do café da manhã brasileiro! Macio por dentro, crocante por fora e cheio de sabor"},
+                    {"nome": "Requeijão Cremoso","foto": "/imagens/galeria/requeijaoPote.jpeg",
+                    "descricao": " Um clássico cremoso e suave, perfeito para usar como ingrediente em suas receitas favoritas."}
                 ]
             }
         ]
@@ -59,30 +72,42 @@
                 "categoria": "Potes",
                 "banner":"/imagens/galeria/docePoteBanner.jpeg",
                 "subitens": [
-                    {"nome": "Doce de geleia","foto":"/imagens/galeria/geleia.jpeg"},
-                    {"nome": "Doce de leite","foto":"/imagens/galeria/doceDeLeitePote.jpeg"},
-                    {"nome": "Doce de Cocada Cremosa","foto":"/imagens/galeria/cocadaPote.jpeg"},
-                    {"nome": "Mel","foto":"/imagens/galeria/mel.jpeg"}
+                    {"nome": "Doce de geleia",
+                    "foto":"/imagens/galeria/geleia.jpeg",
+                    "descricao":"Uma explosão de frutas em forma de doce! Feita com frutas frescas e açúcar, essa geleia é perfeita para passar no pão, incrementar sobremesas ou simplesmente saborear puro."},
+                    
+                    {"nome": "Doce de leite",
+                    "foto":"/imagens/galeria/doceDeLeitePote.jpeg",
+                    "descricao":"Clássico doce de leite em pote, pronto para adoçar sua vida! Feito com leite condensado cozido até ficar cremoso e irresistível, é uma verdadeira tentação em cada colherada."},
+                    
+                    {"nome": "Doce de Cocada Cremosa",
+                    "foto":"/imagens/galeria/cocadaPote.jpeg",
+                    "descricao": "Versão cremosa e deliciosa da cocada tradicional! Feita com coco ralado, leite condensado e açúcar"},
+                    
+                    {"nome": "Mel",
+                    "foto":"/imagens/galeria/mel.jpeg",
+                    "descricao": "Puro, doce e natural, nosso mel é uma fonte de sabor e saúde. Ideal para adoçar chás, iogurtes, sobremesas ou simplesmente saborear direto da colher."}
                 ]
             },
             {
                 "categoria": "Barras",
                 "banner":"/imagens/galeria/bannerDoceBarra.jpeg",
                 "subitens": [
-                    {"nome": "Doce de leite",
-                    "foto":"/imagens/galeria/doceLeiteBarra.jpeg"},
-
+                    {"nome": "Doce de leite em tablete",
+                    "foto":"/imagens/galeria/doceLeiteBarra.jpeg",
+                    "descricao": "Um deleite cremoso e doce, em forma de barra. Perfeito para saborear sozinho ou como ingrediente em suas receitas favoritas."},
                     {"nome": "Cocada",
-                    "foto":"/imagens/galeria/cocada.jpeg"},
-
+                    "foto":"/imagens/galeria/cocada.jpeg",
+                    "descricao": "Um doce típico brasileiro, feito com coco ralado e açúcar, com uma textura macia e sabor doce e tropical. Uma explosão de sabor em cada mordida."},
                     {"nome": "Rapadura",
-                    "foto":"/imagens/galeria/rapadura.jpeg"},
-
+                    "foto":"/imagens/galeria/rapadura.jpeg",
+                    "descricao": "Um doce tradicional, feito a partir da cana-de-açúcar, com uma textura densa e um sabor rico e caramelizado."},
                     {"nome": "Goiabada Cascão",
-                    "foto":"/imagens/galeria/goiabada.jpeg"},
-
+                    "foto":"/imagens/galeria/goiabada.jpeg",
+                    "descricao": "doce brasileiro clássico, feito com goiaba e açúcar, com uma textura firme e um sabor agridoce irresistível. Ideal para ser consumido puro ou como acompanhamento de queijos."},
                     {"nome": "Quebra Queixo",
-                    "foto":"/imagens/galeria/quebraQueixo.jpeg"}
+                    "foto":"/imagens/galeria/quebraQueixo.jpeg",
+                    "descricao": "Um doce tradicional, feito com coco, açúcar e água, com uma textura quebradiça e um sabor doce e delicado. Uma verdadeira explosão de sabores em cada pedaço."}
                 ]
             },
             {
@@ -90,9 +115,11 @@
                 "banner":"/imagens/galeria/docesDietBanner.jpeg",
                 "subitens": [
                     {"nome": "Bananinha Diet",
-                    "foto":"/imagens/galeria/doceDeBananaDiet.jpeg"},
+                    "foto":"/imagens/galeria/doceDeBananaDiet.jpeg",
+                    "descricao": "Um pedacinho de doçura sem culpa! Feita com bananas maduras e sem adição de açúcares, é a opção perfeita para quem busca um doce saudável e delicioso."},
                     {"nome": "Doce de frutas",
-                    "foto":"/imagens/galeria/doceDeFrutas.jpeg"}
+                    "foto":"/imagens/galeria/doceDeFrutas.jpeg",
+                    "descricao": "Feito com frutas frescas e um toque de doçura, é o doce ideal para alegrar o dia com um sabor naturalmente delicioso."}
                 ]
             }
         ]
@@ -105,16 +132,17 @@
             "banner":"/imagens/galeria/pimentasBanner.jpeg",
             "subitens": [
                 {"nome": "Pimenta Biquinho",
-                "foto":" /imagens/galeria/pimentaBiquinho.jpeg"},
-
+                "foto":" /imagens/galeria/pimentaBiquinho.jpeg",
+                "descricao":"Pequena, mas poderosa! A pimenta biquinho é conhecida por seu sabor suave e levemente adocicado. Perfeita para adicionar um toque de calor e sabor aos seus pratos"},
                 {"nome": "Pimenta em conserva no azeite",
-                "foto":" /imagens/galeria/PimentaAzeite.jpeg"},
-
+                "foto":" /imagens/galeria/PimentaAzeite.jpeg",
+                "descricao": "Pimentas em conserva mergulhadas no azeite, proporcionando um equilíbrio único de calor e suavidade."},
                 {"nome": "Pimenta verde em conserva",
-                "foto":" /imagens/galeria/pimentaVerdeConserva.jpeg"},
-
+                "foto":" /imagens/galeria/pimentaVerdeConserva.jpeg",
+                "descricao":"Um toque picante e refrescante! As pimentas verdes em conserva são uma adição vibrante a qualquer refeição. Tem seu sabor característico e intensidade moderada"},
                 {"nome": "Pimenta com Pequi",
-                "foto":" /imagens/galeria/PimentaComPequi.jpeg"}
+                "foto":" /imagens/galeria/PimentaComPequi.jpeg",
+                "descricao":"Combinação exótica de calor da pimenta com aroma único do pequi, trazendo um toque regional aos pratos."}
             ]
         },
         {
@@ -122,7 +150,8 @@
             "banner":"/imagens/galeria/vinagreBanner.jpeg",
             "subitens": [
                 {"nome": "Vinagre Orgânico de maçã",
-                "foto":" /imagens/galeria/VinagreMaca.jpeg"}
+                "foto":" /imagens/galeria/VinagreMaca.jpeg",
+                "descricao": "Feito com maçãs frescas e orgânicas, nosso vinagre oferece um sabor suave e levemente adocicado. Ideal para temperar saladas e realçar o sabor dos seus pratos."}
             ]
         }
     ]
@@ -135,13 +164,14 @@
             "banner":"/imagens/galeria/foto-6.jpeg",
             "subitens": [
                 {"nome": "Castanha de Caju",
-                "foto":" /imagens/galeria/CastanhaCaju.jpeg"},
-
+                "foto":" /imagens/galeria/CastanhaCaju.jpeg",
+                "descricao": "Um punhado de energia pura! Crocante e deliciosa, a castanha de caju é o petisco perfeito para saciar sua fome e satisfazer seu paladar."},
                 {"nome": "Castanha do pará",
-                "foto":" /imagens/galeria/castanhaPara.jpeg"},
-
+                "foto":" /imagens/galeria/castanhaPara.jpeg",
+                "descricao":"Uma explosão de sabor e saúde! A castanha do Pará é uma verdadeira jóia da natureza, repleta de nutrientes e com um sabor que encanta."},
                 {"nome": "Amendoim",
-                "foto":" /imagens/galeria/amendoim.jpeg"}
+                "foto":" /imagens/galeria/amendoim.jpeg",
+                "descricao": "O queridinho dos petiscos! Crocante e irresistível, o amendoim é a escolha perfeita para momentos de diversão e sabor."}
             ]
         },
         {
@@ -149,7 +179,8 @@
             "banner":"/imagens/galeria/CrocanciaSuinaBanner.jpeg",
             "subitens": [
                 {"nome": "Pururuca",
-                "foto":" /imagens/galeria/foto-7.jpeg"}
+                "foto":" /imagens/galeria/foto-7.jpeg",
+                "descricao":"Deliciosamente crocante e cheia de sabor, nossa pururuca é um acompanhamento irresistível para qualquer refeição."}
             ]
         }
     ]
@@ -162,19 +193,20 @@
             "banner":"/imagens/galeria/foto-10.jpeg",
             "subitens": [
                 {"nome": "Salaminho",
-                "foto":" /imagens/galeria/salaminho.jpeg"},
-
+                "foto":" /imagens/galeria/salaminho.jpeg",
+                "descricao":"Uma explosão de sabor em cada fatia! Feito com ingredientes selecionados e temperos especiais, nosso salaminho oferece um paladar único e irresistível."},
                 {"nome": "Linguiça caseira",
-                "foto":" /imagens/galeria/linguica.jpeg"},
-
+                "foto":" /imagens/galeria/linguica.jpeg",
+                "descricao": "Tradição e cuidado se encontram em cada pedaço! Nossa linguiça caseira combina carne suculenta e temperos autênticos para um sabor que remete à roça."},
                 {"nome": "Carne Seca",
-                "foto":" /imagens/galeria/carneSeca.jpeg"},
-
+                "foto":" /imagens/galeria/carneSeca.jpeg",
+                "descricao":"Sabor autêntico e textura inigualável, nossa carne seca é um ingrediente versátil e delicioso para diversas receitas."},
                 {"nome": "Peito de Peru",
-                "foto":" /imagens/galeria/peitoDePeru.jpeg"},
-
+                "foto":" /imagens/galeria/peitoDePeru.jpeg",
+                "descricao":"Saudável e saboroso! Nosso peito de peru é feito com ingredientes de qualidade, proporcionando um sabor suave e uma textura macia."},
                 {"nome": "Bacon caipira",
-                "foto":" /imagens/galeria/baconCaipira.jpeg"}
+                "foto":" /imagens/galeria/baconCaipira.jpeg",
+                "descricao":"O sabor defumado do campo em cada fatia! Produzido artesanalmente, nosso bacon caipira adiciona um toque especial a qualquer prato."}
             ]
         }]
     },
@@ -186,7 +218,8 @@
             "banner":"/imagens/galeria/pingaBanner.jpeg",
             "subitens": [
                 {"nome": "Pinga Artesanal",
-                "foto":" /imagens/galeria/pingas.jpeg"}
+                "foto":" /imagens/galeria/pingas.jpeg",
+                "descricao":"Nossa pinga artesanal é uma bebida com aroma e sabor autênticos que capturam a essência da cultura brasileira."}
             ]
         },
         {
@@ -194,7 +227,8 @@
             "banner":"/imagens/galeria/vinhos.jpeg",
             "subitens": [
                 {"nome": "Vinho Beloto",
-                "foto":" /imagens/galeria/VinhoBeloto.jpeg"}
+                "foto":" /imagens/galeria/VinhoBeloto.jpeg",
+                "descricao": "Escolha sofisticada para momentos especiais, combinando notas ricas e aromáticas que tornam cada gole uma experiência memorável."}
             ]
         }
     ]

@@ -153,7 +153,7 @@ export default function Cardapio() {
                                     <ListaItensEstilizada key={index}>
                                     <DescricaoEstilizada>
                                     <ListaItemTitulo key={index}>{subitem.nome}</ListaItemTitulo>
-                                    <p>descricao do produto</p>
+                                    <p>{subitem.descricao}</p>
                                     </DescricaoEstilizada>
                                     <ImgItensEstilizada src={subitem.foto}/>
                                     </ListaItensEstilizada>
