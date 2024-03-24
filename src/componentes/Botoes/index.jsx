@@ -15,6 +15,7 @@ const BotoesEstilizados = styled.button`
     & svg{
         color: var(--amarelo);
     }
+
 `;
 
 const Link = styled.a`

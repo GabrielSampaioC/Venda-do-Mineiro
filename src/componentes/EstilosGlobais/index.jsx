@@ -9,6 +9,7 @@ const EstilosGlobais = createGlobalStyle`
   --amarelo: #dea02e;
   --fonte-principal: 'Outfit', 'sans-serif';
   --branco: #ffffff;
+  --amarelo-escuro: #a26f10;
 }
 
 html {

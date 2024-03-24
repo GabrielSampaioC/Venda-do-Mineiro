@@ -15,12 +15,17 @@ const Container = styled.section`
         justify-content: center;
         min-height: 100vh;
     }
+    @media (max-width:1000px){
+        justify-content: center;
+        text-align: center;
+    }
+
 `
 const Logo = styled.img`
     max-width: 100%;
     width: 350px;
 
-    @media (max-width:768px){
+    @media (max-width:1000px){
         display: none;
     }
 `
@@ -36,9 +41,9 @@ const SaberMaisEstilizado = styled.div`
         width: 100%;
         text-align: center;
         align-items: center;
-        justify-content: center;
         gap: 10px;
-    }   
+    }
+
 `
 const TextoEstilizado = styled.p`
     font-size: 20px;
