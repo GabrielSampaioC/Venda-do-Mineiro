@@ -3,8 +3,9 @@ import Cabecalho from "../../componentes/Cabecalho";
 import Rodape from "../../componentes/Rodape";
 import styled from "styled-components";
 import EstilosGlobais from "../../componentes/EstilosGlobais";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import MenuHamburguer from "../../componentes/MenuHamburguer";
 
 function ScrollToTopOnMount() {
     const { hash } = useLocation();
@@ -23,17 +24,20 @@ function ScrollToTopOnMount() {
     return null;
 }
 
-const FundoEstilizado = styled.div`
-    
-`
+const FundoEstilizado = styled.div``;
 
 export default function PaginaPadrao() {
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
     return (
         <>
-            <ScrollToTopOnMount/>
+            <MenuHamburguer
+                menuIsVisible={menuIsVisible}
+                setMenuIsVisible={setMenuIsVisible}
+            />
+            <ScrollToTopOnMount />
             <EstilosGlobais />
             <FundoEstilizado>
-                <Cabecalho />
+                <Cabecalho setMenuIsVisible={setMenuIsVisible} />
             </FundoEstilizado>
             <Outlet />
             <Rodape />

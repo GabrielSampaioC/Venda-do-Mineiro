@@ -9,6 +9,7 @@ const CabecalhoEstilizado = styled.header`
     position: fixed;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 `;
 const CabecalhoWrapper = styled.div`
     max-width: 1440px;
@@ -67,12 +68,14 @@ const IconeEstilizado = styled(MdMenu)`
     }
 
 `
-export default function Banner(){
+export default function Cabecalho({setMenuIsVisible}){
+
     return(
+
         <CabecalhoEstilizado>
             <CabecalhoWrapper>
             <img src="./imagens/galeria/logo.png" alt="logo-site" width="50px"/>
-            <IconeEstilizado/>
+            <IconeEstilizado onClick={() => setMenuIsVisible(true)} />
                 <ListaEstilizada>
                     <ListaItem>
                         <ItemEstilizado to="/#Inicio">Início</ItemEstilizado>
