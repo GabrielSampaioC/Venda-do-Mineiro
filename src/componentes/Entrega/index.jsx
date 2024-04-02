@@ -17,10 +17,10 @@ margin: 2em 0;
         flex-direction: column;
     }
 
-@media  (min-width: 768px) {
-        display: flex;
+@media  (max-width: 1000px) {
         padding: 20px;
         flex-direction: column;
+        display: flex;
     }
 
 @media  (min-width: 1200px) {
@@ -34,18 +34,15 @@ const ImagemEstilizada = styled.img`
     filter: drop-shadow(2px 4px 6px black);
 
 @media  (max-width: 768px) {
-
-        padding: 0;
-        width: 100%;
-        margin: 1em 0;
+        display: none;
     }
 
-@media  (min-width: 768px) {
+@media  (max-width: 1000px) {
         display: none;
     }
 
 @media  (min-width: 1200px) {
-        display: flex;
+        display: grid;
     }
 `
 
@@ -101,7 +98,25 @@ const TextoGrifado = styled.p`
     color: var(--amarelo-escuro);
     font-weight: bold;
 `
+const ImagemEstilizadaMobile = styled.img`
+        filter: drop-shadow(2px 4px 6px black);
+        max-width: 40%;
+        display: flex;
+        align-self: center;
 
+        @media  (max-width: 768px) {
+        display: block;
+        max-width: 70%;
+    }
+        @media  (min-width: 1000px) {
+        display: none;
+        max-width: 70%;
+    }
+
+        @media  (min-width: 1200px) {
+        display: none;
+    }
+`
 
 export default function Entrega() {
 
@@ -112,9 +127,10 @@ export default function Entrega() {
                     <InfoEntregaEstilizada>
                         <Titulos>Levamos até você</Titulos>
                         <Textos>Nosso carro de entregas está a caminho, trazendo consigo uma seleção preparada dos melhores sabores. Deixe-nos cuidar do transporte enquanto você aguarda ansiosamente para desfrutar de cada iguaria.</Textos>
+                        <ImagemEstilizadaMobile src="./imagens/galeria/carroEntrega2.png" />
                         <TextoInformativo><InfoPrioritaria>Locais de entrega:</InfoPrioritaria> <TextoGrifado>São Paulo, Cajamar, Santana de Parnaíba, Pirapora do bom Jesus e Carapicuíba.</TextoGrifado></TextoInformativo>
                         <InfoEstilizada>
-                            <TextoInformativo><InfoPrioritaria>Horários: Segunda a Sexta:</InfoPrioritaria> 08h às 18h.<InfoPrioritaria>Sábados:</InfoPrioritaria> 10h às 16h.</TextoInformativo>
+                            <TextoInformativo><InfoPrioritaria>Segunda a Sexta:</InfoPrioritaria> 08h às 18h.<InfoPrioritaria>Sábados:</InfoPrioritaria> 10h às 16h.</TextoInformativo>
                         </InfoEstilizada>
 
                     </InfoEntregaEstilizada>

@@ -22,6 +22,10 @@ const Link = styled.a`
     display: flex;
     text-decoration: none;
     box-sizing: border-box;
+
+    @media (max-width:1000px){
+        align-self: center;
+    }
 `;
 
 export default function Botoes({ children }) {

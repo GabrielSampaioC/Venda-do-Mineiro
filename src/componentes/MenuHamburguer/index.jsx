@@ -5,19 +5,18 @@ import { useEffect } from "react";
 
 const Container = styled.section`
     position: fixed;
-    width: 70%;
+    width: 60%;
     height: 100%;
     top:0;
     right:0;
     bottom: 0;
     z-index: 5;
-    display: none;
     align-items: flex-start;
     justify-content: flex-end;
     background-color: var(--marrom);
     opacity: 0;
     pointer-events: none;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transform: translateX(50px);
     box-shadow: 1px 1px 1px 1px;
 
@@ -31,7 +30,7 @@ const Container = styled.section`
     ${({isVisible}) => isVisible && css`
         opacity: 1;
         pointer-events: auto;
-        transition: 1s ease-in-out;
+        transition: 0.5s ease-in-out;
         transform: translateX(0px);
         display: flex;
 

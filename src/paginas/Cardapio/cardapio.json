@@ -98,12 +98,6 @@
                     "foto":"/imagens/galeria/doceLeiteBarra.jpeg",
                     "descricao": "Um deleite cremoso e doce, em forma de barra. Perfeito para saborear sozinho ou como ingrediente em suas receitas favoritas."},
 
-                    {"nome": "Cocada",
-                    "foto":"/imagens/galeria/cocada.jpeg",
-                    "descricao": "Um doce típico brasileiro, feito com coco ralado e açúcar, com uma textura macia e sabor doce e tropical. Uma explosão de sabor em cada mordida."},
-                    {"nome": "Rapadura",
-                    "foto":"/imagens/galeria/rapadura.jpeg",
-                    "descricao": "Um doce tradicional, feito a partir da cana-de-açúcar, com uma textura densa e um sabor rico e caramelizado."},
                     {"nome": "Goiabada Cascão",
                     "foto":"/imagens/galeria/goiabada.jpeg",
                     "descricao": "doce brasileiro clássico, feito com goiaba e açúcar, com uma textura firme e um sabor agridoce irresistível. Ideal para ser consumido puro ou como acompanhamento de queijos."},
@@ -116,11 +110,6 @@
                     {"nome": "Rapadura",
                     "foto":"/imagens/galeria/rapadura.jpeg",
                     "descricao": "Um doce tradicional, feito a partir da cana-de-açúcar, com uma textura densa e um sabor rico e caramelizado."},
-
-                    {"nome": "Goiabada Cascão",
-                    "foto":"/imagens/galeria/goiabada.jpeg",
-                    "descricao": "doce brasileiro clássico, feito com goiaba e açúcar, com uma textura firme e um sabor agridoce irresistível. Ideal para ser consumido puro ou como acompanhamento de queijos."},
-
 
                     {"nome": "Quebra Queixo",
                     "foto":"/imagens/galeria/quebraQueixo.jpeg",
