@@ -1,7 +1,7 @@
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const Container = styled.section`
     position: fixed;
@@ -33,7 +33,6 @@ const Container = styled.section`
         transition: 0.5s ease-in-out;
         transform: translateX(0px);
         display: flex;
-
     `}
 `;
 
@@ -92,18 +91,42 @@ const ListaItem = styled.li`
 `;
 
 export default function MenuHamburguer({ menuIsVisible, setMenuIsVisible }) {
+    const menuRef = useRef(null); // Referência para o menu
+
     useEffect(() => {
-    document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
-    }, [menuIsVisible ]);
+        document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
+        
+        // Função para fechar o menu quando o usuário clicar fora dele
+        function handleClickOutside(event) {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setMenuIsVisible(false);
+            }
+        }
+
+        // Adicionando o event listener quando o menu é visível
+        if (menuIsVisible) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [menuIsVisible, setMenuIsVisible]);
 
     const handleMenuItemClick = () => {
         setMenuIsVisible(false);
     };
 
+    const handleBlurOverlayClick = () => {
+        setMenuIsVisible(false);
+    };
+
     return (
         <>
-            {menuIsVisible && <BlurOverlay />}
-            <Container isVisible={menuIsVisible}>
+            {menuIsVisible && <BlurOverlay onClick={handleBlurOverlayClick} />}
+            <Container isVisible={menuIsVisible} ref={menuRef}> {/* Adicionando a referência para o menu */}
                 <IoCloseCircleOutline size={45} onClick={() => setMenuIsVisible(!menuIsVisible)} />
                 <ListaEstilizada isVisible={menuIsVisible}>
                     <ListaItem>
