@@ -24,7 +24,7 @@ export default function Produtos({children}) {
             <BordaEstilizada/>
             </div>
             <Textos>
-                Venha descobrir a magia além dos nossos derivados de tradição mineira, explore a variedade e o sabor único de todos os nossos produtos.
+            Explore nossa coleção diversificada e descubra o sabor único que torna cada item uma verdadeira joia culinária. É hora de embarcar em uma jornada de delícias e se apaixonar pela magia dos produtos que só Minas tem a oferecer.
             </Textos>
             {children}
         </ContainerProdutos>

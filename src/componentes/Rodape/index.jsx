@@ -131,7 +131,7 @@ export default function Rodape() {
                     <div>
                         <Span>Nossas redes</Span>
                         <ContainerRedes>
-                            <BotaoRedesLink href="https://wa.me/5511986691592"><BlocoEstilizado>{<FaWhatsapp />}</BlocoEstilizado></BotaoRedesLink>
+                            <BotaoRedesLink href="https://wa.me/5511987769633"><BlocoEstilizado>{<FaWhatsapp />}</BlocoEstilizado></BotaoRedesLink>
                             <BotaoRedesLink href="https://www.instagram.com/vendasdomineiro/"><BlocoEstilizado>{<FaInstagram />}</BlocoEstilizado></BotaoRedesLink>
                         </ContainerRedes>
                     </div>

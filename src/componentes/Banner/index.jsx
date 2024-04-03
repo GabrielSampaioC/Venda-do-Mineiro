@@ -66,8 +66,7 @@ export default function Banner() {
                     Venda do Mineiro
                 </Titulos>
                 <TextoEstilizado>
-                    Venha saborear e experienciar a exclusividade de nossos produtos, diretamente de Minas
-                    Venha saborear e experienciar a exclusividade de nossos produtos, diretamente
+                Desperte seus sentidos para uma jornada gastronômica inigualável! Aqui, cada produto é uma obra-prima da tradição mineira, cuidadosamente preparada para surpreender o seu paladar. Venha se deliciar e descobrir por que os sabores de Minas Gerais são tão especiais!
                 </TextoEstilizado>
                 <Botoes>
                     <BiSolidCheese />

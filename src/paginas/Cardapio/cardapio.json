@@ -60,7 +60,11 @@
                     {"nome": "Pão de queijo","foto": "/imagens/galeria/paoDeQueijo.jpeg",
                     "descricao": "A estrela do café da manhã brasileiro! Macio por dentro, crocante por fora e cheio de sabor"},
                     {"nome": "Requeijão Cremoso","foto": "/imagens/galeria/requeijaoPote.jpeg",
-                    "descricao": " Um clássico cremoso e suave, perfeito para usar como ingrediente em suas receitas favoritas."}
+                    "descricao": " Um clássico cremoso e suave, perfeito para usar como ingrediente em suas receitas favoritas."},
+
+                    {"nome": "Manteiga caseira",
+                    "foto": "/imagens/galeria/manteiga.jpeg",
+                    "descricao": " Perfeita para espalhar no pão fresquinho ou para realçar o sabor de suas receitas favoritas. "}
                 ]
             }
         ]
@@ -84,6 +88,47 @@
                     {"nome": "Doce de Cocada Cremosa",
                     "foto":"/imagens/galeria/cocadaPote.jpeg",
                     "descricao": "Versão cremosa e deliciosa da cocada tradicional! Feita com coco ralado, leite condensado e açúcar"},
+
+                    {"nome": "Doce de leite com café",
+                    "foto":"/imagens/galeria/doceDeLeiteCafe.jpg",
+                    "descricao": "Doce de Leite com Café combina a suavidade do leite condensado caramelizado com a intensidade do café torrado,ombinação desses dois clássicos que conquistam corações ao redor do mundo."},
+
+                    {"nome": "Doce de leite com granulado",
+                    "foto":"/imagens/galeria/doceDeLeiteGranulado.jpg",
+                    "descricao": "Cuidadosamente granulado para uma textura macia e cremosa, cada pedacinho é uma delícia para o paladar."},
+
+                    {"nome": "Doce de leite com chocolate",
+                    "foto":"/imagens/galeria/doceDeLeiteChocolate.jpeg",
+                    "descricao": "Delicie-se com a perfeita combinação de doce de leite e chocolate. Uma explosão de sabor que vai encantar seu paladar!"},
+
+                    {"nome": "geleia de Maracujá com coco",
+                    "foto":"/imagens/galeria/geleiaMaracuja.jpeg",
+                    "descricao": "Transforme seus momentos em verdadeiros paraísos tropicais com nossa Geleia de Maracujá com coco."},
+
+                    {"nome": "Geleia de Maracujá, Morango e Kiwi com coco",
+                    "foto":"/imagens/galeria/geleiaMaracujaMorangoKiwiCoco.jpeg",
+                    "descricao": "Experimente uma explosão de sabores com a Geleia de Maracujá, Morango e Kiwi com Coco. Uma combinação única que vai encantar seu paladar. Delicie-se!"},
+
+                    {"nome": "Doce de leite com geleia de goiaba",
+                    "foto":"/imagens/galeria/doceDeLeiteGoiaba.jpeg",
+                    "descricao": "A doçura cremosa do doce de leite encontra a intensidade da geleia de goiaba, criando uma harmonia perfeita de sabores que vai conquistar seu paladar"},
+
+                    {"nome": "Ambrosia",
+                    "foto":"/imagens/galeria/ambrosia.jpeg",
+                    "descricao": "Combinação perfeita de ovos, leite e açúcar, cozidos lentamente até atingir uma textura cremosa e um sabor irresistível."},
+
+                    {"nome": "Mamão ralado com coco",
+                    "foto":"/imagens/galeria/mamaoCoco.jpeg",
+                    "descricao": "Combinação perfeita entre o frescor do mamão e a suavidade do coco, para uma experiência única."},
+
+                    
+                    {"nome": "Cidra ralada com coco",
+                    "foto":"/imagens/galeria/cidraRalada.jpeg",
+                    "descricao": "Experimente a frescura e o sabor vibrante da cidra ralada, um toque refrescante para suas receitas favoritas."},
+
+                    {"nome": "Figo em calda",
+                    "foto":"/imagens/galeria/figoCalda.jpeg",
+                    "descricao": "Desfrute da doçura natural dos figos em uma deliciosa calda, uma verdadeira iguaria para seu paladar."},
                     
                     {"nome": "Mel",
                     "foto":"/imagens/galeria/mel.jpeg",
