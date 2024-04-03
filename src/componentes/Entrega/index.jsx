@@ -130,7 +130,7 @@ export default function Entrega() {
                         <ImagemEstilizadaMobile src="./imagens/galeria/carroEntrega2.png" />
                         <TextoInformativo><InfoPrioritaria>Locais de entrega:</InfoPrioritaria> <TextoGrifado>São Paulo, Cajamar, Santana de Parnaíba, Pirapora do bom Jesus e Carapicuíba.</TextoGrifado></TextoInformativo>
                         <InfoEstilizada>
-                            <TextoInformativo><InfoPrioritaria>Segunda a Sexta:</InfoPrioritaria> 08h às 18h.<InfoPrioritaria>Sábados:</InfoPrioritaria> 10h às 16h.</TextoInformativo>
+                            <TextoInformativo><InfoPrioritaria>Segunda a Sexta:</InfoPrioritaria> 08h às 18h.<InfoPrioritaria>Sábados:</InfoPrioritaria> 10h às 18h.</TextoInformativo>
                         </InfoEstilizada>
 
                     </InfoEntregaEstilizada>

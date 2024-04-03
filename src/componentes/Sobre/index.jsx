@@ -47,7 +47,7 @@ export default function Sobre() {
         <>
             <ContainerEstilizado id="Sobre">
                 <ContainerBannerPrincipal>
-                    <ImagemBanner src="../imagens/galeria/bannerDoceBarra.jpeg" />
+                    <ImagemBanner src="../imagens/galeria/sobreBanner.jpg" />
                 </ContainerBannerPrincipal>
 
             <Titulos>Sobre nós</Titulos>

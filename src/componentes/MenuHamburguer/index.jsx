@@ -91,19 +91,19 @@ const ListaItem = styled.li`
 `;
 
 export default function MenuHamburguer({ menuIsVisible, setMenuIsVisible }) {
-    const menuRef = useRef(null); // Referência para o menu
+    const menuRef = useRef(null);
 
     useEffect(() => {
         document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
         
-        // Função para fechar o menu quando o usuário clicar fora dele
+        
         function handleClickOutside(event) {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
                 setMenuIsVisible(false);
             }
         }
 
-        // Adicionando o event listener quando o menu é visível
+        
         if (menuIsVisible) {
             document.addEventListener('mousedown', handleClickOutside);
         } else {
@@ -126,7 +126,7 @@ export default function MenuHamburguer({ menuIsVisible, setMenuIsVisible }) {
     return (
         <>
             {menuIsVisible && <BlurOverlay onClick={handleBlurOverlayClick} />}
-            <Container isVisible={menuIsVisible} ref={menuRef}> {/* Adicionando a referência para o menu */}
+            <Container isVisible={menuIsVisible} ref={menuRef}>
                 <IoCloseCircleOutline size={45} onClick={() => setMenuIsVisible(!menuIsVisible)} />
                 <ListaEstilizada isVisible={menuIsVisible}>
                     <ListaItem>
