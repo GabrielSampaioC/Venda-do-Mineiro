@@ -56,6 +56,8 @@ const LogoFooter = styled.img`
 `
 const BotaoRedesLink = styled.a`
     text-decoration: none;
+    color: var(--amarelo-claro);
+    font-weight: bold;
 
     svg{
         font-size: 22px;
@@ -112,7 +114,7 @@ export default function Rodape() {
                     <LogoFooter src="./imagens/galeria/logo.png" alt="logo" />
                     <DescricaoFooter>
                         <div>
-                        <b>&copy; Venda do mineiro </b> - Todos os direitos reservados
+                        <b>&copy; Venda do mineiro </b> - Baseado no Projeto <BotaoRedesLink href="https://www.marybin.com.br">Mary Bin</BotaoRedesLink>
                         </div>
                         <div>
                         <b>Funcionamento: </b> <b>Segunda a Sexta</b>: 08h às 18h. <b>Sábados</b>: 10h às 16h.

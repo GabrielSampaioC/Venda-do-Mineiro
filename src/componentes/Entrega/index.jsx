@@ -67,10 +67,12 @@ const TextoInformativo = styled.p`
     line-height: 1.5em;
     margin: 0;
     padding: 10px;
+
     @media  (max-width: 768px) {
-        display: block;
+        
         text-align: justify;
         flex-direction: column;
+        display: flex;
     }
 
 `
@@ -125,7 +127,7 @@ export default function Entrega() {
             <Container>
                 <ContainerEntrega id="entregas">
                     <InfoEntregaEstilizada>
-                        <Titulos>Levamos até você</Titulos>
+                        <Titulos>Levamos até você!</Titulos>
                         <Textos>Nosso carro de entregas está a caminho, trazendo consigo uma seleção preparada dos melhores sabores. Deixe-nos cuidar do transporte enquanto você aguarda ansiosamente para desfrutar de cada iguaria.</Textos>
                         <ImagemEstilizadaMobile src="./imagens/galeria/carroEntrega2.png" />
                         <TextoInformativo><InfoPrioritaria>Locais de entrega:</InfoPrioritaria> <TextoGrifado>São Paulo, Cajamar, Santana de Parnaíba, Pirapora do bom Jesus e Carapicuíba.</TextoGrifado></TextoInformativo>
